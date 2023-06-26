@@ -1,7 +1,7 @@
 # Portfolio Website
 
-## Currently under development
+#### Currently under development
 
-### Working on chatbot functionality
+#### Working on chatbot functionality
 
-Visit david-clarke.com to see current deployed site
+#### Visit david-clarke.com to see current deployed site
