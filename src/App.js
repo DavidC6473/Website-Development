@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Footer, Header, Features } from './containers';
 import { VRJam, NBAApp, Turtle, Java } from './containers';
-import { Project, Navbar } from './components';
+import { Project, Navbar, Feature } from './components';
 import './App.css';
 
 const App = () => {
@@ -15,6 +15,7 @@ const App = () => {
           <Route path="/" element={<>
             <Header />
             <Features />
+            <Feature />
             <Project />
           </>} />
           <Route path="/vrjam" element={<VRJam />} />

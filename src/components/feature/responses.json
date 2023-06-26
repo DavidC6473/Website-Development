@@ -1,0 +1,29 @@
+{
+    "intents": [
+      {
+        "name": "about",
+        "messages": [
+          "I am a chatbot designed to assist you. How can I help you today?"
+        ]
+      },
+      {
+        "name": "about_me",
+        "messages": [
+          "I am an AI-powered chatbot created to provide assistance and answer your questions. Is there anything specific you would like to know?"
+        ]
+      },
+      {
+        "name": "contact",
+        "messages": [
+          "You can contact me through email at Dcc6473@gmail.com."
+        ]
+      },
+      {
+        "name": "skills",
+        "messages": [
+          "I have expertise in various skills, including HTML, CSS, JavaScript, Python, React, and more. How can I assist you with your skills?"
+        ]
+      }
+    ]
+  }
+  
