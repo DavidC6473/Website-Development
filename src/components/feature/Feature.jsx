@@ -59,13 +59,13 @@ const Feature = () => {
       return botMessage;
     } catch (error) {
       console.error('Error communicating with wit.ai:', error);
-      return "Sorry, I couldn't understand your message.";
+      return "I'm sorry, I'm having trouble understanding you at the moment.";
     }
   };
 
   const getResponse = (intent) => {
     const intentData = responses.intents.find((item) => item.name === intent);
-    return intentData ? getRandomMessage(intentData.messages) : "Sorry, I couldn't understand your message.";
+    return intentData ? getRandomMessage(intentData.messages) : "I'm sorry, I'm not sure how to respond to that.";
   };
 
   const getRandomMessage = (messages) => {
