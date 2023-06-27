@@ -7,8 +7,8 @@ const Feature = () => {
   const [userMessage, setUserMessage] = useState('');
 
   useEffect(() => {
-    // Add initial bot message when component mounts
-    const initialBotMessage = "Hi, I'm David's personal ChatBot. Ask me about David's skills and experience!";
+    const initialBotMessage =
+      "Hi, I'm a ChatBot created by David. Ask me about David's skills and experience, and I will do my best to answer!";
     addMessage(initialBotMessage, 'bot');
   }, []);
 
@@ -19,60 +19,85 @@ const Feature = () => {
       return;
     }
 
-    // Clear the input field
     setUserMessage('');
 
-    // Add user message to the chat
     addMessage(userMessage, 'user');
 
-    // Send user message to wit.ai and get bot response
     const botMessage = await getBotMessage(userMessage);
 
-    // Add bot message to the chat
     addMessage(botMessage, 'bot');
   };
 
   const addMessage = (message, sender) => {
     const newMessage = {
       text: message,
-      sender: sender
+      sender: sender,
     };
 
     setMessages((prevMessages) => [...prevMessages, newMessage]);
   };
 
   const getBotMessage = async (message) => {
-    const url = `https://api.wit.ai/message?v=20220618&q=${encodeURIComponent(message)}`;
-
+    const url = `https://api.wit.ai/message?v=20220618&q=${encodeURIComponent(
+      message
+    )}`;
+  
     try {
       const response = await fetch(url, {
         headers: {
-          Authorization: 'Bearer ZLLZJLYOAQR7X5462HBE7T34LG7ZZXIT',
-          'Content-Type': 'application/json'
-        }
+          Authorization: 'Bearer MHQJU42RLTXYQU7YD7O6ZNBDJYQP7HDI',
+          'Content-Type': 'application/json',
+        },
       });
-
+  
       const data = await response.json();
-
+  
       const intent = data.intents && data.intents[0] && data.intents[0].name;
-      const botMessage = getResponse(intent);
+      const entities = data.entities && data.entities;
+  
+      const botMessage = getResponse(intent, entities);
       return botMessage;
     } catch (error) {
       console.error('Error communicating with wit.ai:', error);
       return "I'm sorry, I'm having trouble understanding you at the moment.";
     }
   };
-
-  const getResponse = (intent) => {
-    const intentData = responses.intents.find((item) => item.name === intent);
-    return intentData ? getRandomMessage(intentData.messages) : "I'm sorry, I'm not sure how to respond to that.";
+  
+  const getResponse = (intent, entities) => {
+    console.log("Intent:", intent);
+    console.log("Entities:", entities);
+  
+    if (entities && Object.keys(entities).length > 0) {
+      const intentData = responses.intents[intent];
+      if (intentData && intentData.entities) {
+        for (const entityName in entities) {
+          const entityData = intentData.entities[entityName];
+          if (entityData) {
+            const entityValue = entities[entityName][0].value;
+            const entityResponse = entityData[entityValue] && entityData[entityValue].responses[0];
+            if (entityResponse) {
+              const githubLink = entityData[entityValue].githubLink;
+              if (githubLink) {
+                return `${entityResponse}\nGithub Link: ${githubLink}`;
+              } else {
+                return entityResponse;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    // If entities are not present or no entity-specific response is found,
+    // fallback to intent-specific response
+    const intentData = responses.intents[intent];
+    if (intentData && intentData.responses.length > 0) {
+      return intentData.responses[0];
+    }
+  
+    return "I'm sorry, I'm not sure how to respond to that.";
   };
-
-  const getRandomMessage = (messages) => {
-    const randomIndex = Math.floor(Math.random() * messages.length);
-    return messages[randomIndex];
-  };
-
+  
   return (
     <div className="chatbot-container">
       <div className="chatbot-messages">
