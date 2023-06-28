@@ -2,7 +2,7 @@
   "intents": {
     "About_Me": {
       "responses": [
-        "I'm David Clarke, a web developer originally from Roscommon, Ireland. Currently, I reside in Melbourne, Australia. I hold an MSc in Interactive Media from University College Cork, where I graduated with First Class Honours. I have a passion for both frontend and backend web development. I'm proficient in JavaScript, CSS, and HTML. I particularly enjoy working with React.js for frontend development and have completed projects using Node.js for backend development. Currently, I'm learning Python and Django to expand my web development skills. I love coding and working on exciting projects, always eager to explore and learn new technologies."
+        "I'm David Clarke, a web developer originally from Roscommon, Ireland. Currently, I reside in Melbourne, Australia. I hold an MSc in Interactive Media from University College Cork, where I graduated with First Class Honours. I have a passion for both frontend and backend web development. I'm proficient in JavaScript, CSS, and HTML. I particularly enjoy working with React.js for frontend development and have completed projects using Node.js for backend development. Currently, I'm learning Python and Django to expand my web development skills. I love coding and working on exciting projects, always eager to explore and learn new technologies.\n\n Please feel free to ask me about some of these skills and technologies."
       ]
     },
     "Greeting": {
@@ -13,92 +13,79 @@
     "Skills": {
       "responses": [
         "Filler response for Skills"
-      ],
-      "entities": {
-        "api": {
-          "responses": [
-            "I have hands-on experience working with APIs to create interesting and functional websites. For instance, this chatbot that you're interacting with right now was created using the wit.ai API, enabling natural language understanding and response generation. Another project where I utilized an API is Art-Palette, which integrates the Unsplash API to generate art palettes based on user preferences. You can explore the Art-Palette project on GitHub. Working with APIs has allowed me to leverage external data and services to enhance the functionality and user experience of my projects.",
-            "Github Link: https://github.com/DavidC6473/Art-Palette.git"
-          ]
-        },
-        "backend": {
-          "responses": [
-            "I have extensive experience in backend development using both Python with Django and Node.js with Express.js. Python, along with Django, provides a robust and scalable framework for building backend logic and web applications. On the other hand, Node.js and Express.js offer a JavaScript-based environment that allows for efficient and event-driven backend development. One notable project where I utilized Node.js and Express.js was my thesis project, VR Jam. It involved creating a backend system to support the virtual reality experience. You can find more information about this project in my portfolio's projects section or explore the GitHub repository directly.",
-            "Github Link: https://github.com/DavidC6473/VRJam.git"
-          ]
-        },
-        "css": {
-          "responses": [
-            "CSS plays a vital role in web development as it allows me to style and enhance the visual appeal of websites, making them more user-friendly. I utilize CSS extensively in my projects to create beautiful and engaging designs. For example, the styling of this website you're currently browsing was achieved using CSS, in conjunction with HTML, JavaScript, and React. If you're interested in exploring the code and seeing how the website was styled, you can check out the GitHub repository.",
-            "Github Link: https://github.com/DavidC6473/Website-Development.git"
-          ]
-        },
-        "deployment": {
-          "responses": [
-            "Filler response for deployment skill"
-          ]
-        },
-        "git": {
-          "responses": [
-            "Filler response for git skill"
-          ]
-        },
-        "html": {
-          "responses": [
-            "HTML is an essential skill in web development, and I frequently incorporate it into my development stack. It allows me to structure and create the foundation of web pages. In fact, this website you're currently viewing was made using HTML along with JavaScript, CSS, and React. If you'd like to explore the code and learn more about its development, you can check out the GitHub repository.",
-            "Github Link: https://github.com/DavidC6473/Website-Development.git"
-          ]
-        },
-        "java": {
-          "responses": [
-            "While I don't have extensive experience with Java, I have worked with it in the context of Processing. Processing is a creative coding platform that utilizes Java for visual arts and interactive projects. I have created several projects using Java in Processing, showcasing my creativity and coding skills. One such project is Pronoun Usage, which can be found in the projects section of my portfolio. If you're interested in learning more about this project and exploring the code, you can find the GitHub repository.",
-            "Github Link: https://github.com/DavidC6473/Java-Pronoun-Use-Movies.git"
-          ]
-        },
-        "javascript": {
-          "responses": [
-            "I have been working with JavaScript for the past two years and have gained proficiency in the language. When developing websites, I particularly enjoy using React, a popular JavaScript library for building user interfaces. For instance, I developed my personal website from scratch using JavaScript, HTML, CSS, and React. If you're interested, you can explore the GitHub repository for the website's development.",
-            "Github Link: https://github.com/DavidC6473/Website-Development.git"
-          ]
-        },
-        "node_js": {
-          "responses": [
-            "I have extensive experience using Node.js and Express.js for backend development. Node.js provides a powerful runtime environment for building scalable and efficient server-side applications. Express.js, being a minimalist web application framework, complements Node.js perfectly, allowing me to develop robust APIs and handle routing efficiently. One project where I utilized Node.js and Express.js, along with Socket.IO, was my thesis project, VR Jam. The backend was developed using this technology stack to handle real-time communication and support the virtual reality experience. If you'd like to explore this project further, you can check it out on GitHub.",
-            "Github Link: https://github.com/DavidC6473/VRJam.git"
-          ]
-        },
-        "python": {
-          "responses": [
-            "I find Python to be a powerful language for software development and backend logic in websites. It offers a wide range of libraries and frameworks that enhance productivity. I have been exploring Python's capabilities in various domains, including machine learning. One of my machine learning projects is a music genre classifier, which you can checkout on GitHub below. Additionally, I created a project for Ableton Live using Python, which allows for automation and streamlining of processes. You can check out the project below also. Furthermore, I have been learning Django to deploy my Python code to websites, enabling the development of robust web applications. Python's versatility and the Django framework provide a solid foundation for building powerful and scalable web projects.",
-            "Music Genre Classifier: https://github.com/DavidC6473/music-genre-classifier.git",
-            "Ableton Collect and Save: https://github.com/DavidC6473/Automate-Ableton-Collect-And-Save.git"
-          ]
-        },
-        "react": {
-          "responses": [
-            "I thoroughly enjoy using React as my primary framework for website development. React's component-based architecture helps me organize my code and maintain a clear and structured project. It allows me to create interactive and efficient user interfaces. In fact, this website you're currently exploring was created using React, along with HTML, CSS, and JavaScript. If you're interested in delving into the code and learning more about the project, you can check out the GitHub repository.",
-            "Github Link: https://github.com/DavidC6473/Website-Development.git"
-          ]
-        },
-        "swift": {
-          "responses": [
-            "I have experience working with Swift, Apple's programming language for iOS development. I have developed multi-page applications and worked extensively with Core Data, a powerful framework for data storage and management. One notable project where I utilized Swift is the NBA App, which can be found in the projects section of my portfolio. The NBA App was created using Swift in Xcode, and it showcases my skills in building interactive iPhone applications. If you'd like to explore the code and learn more about the project, you can find the GitHub repository.",
-            "Github Link: https://github.com/DavidC6473/Swift-NBA-Teams-App.git"
-          ]
-        },
-        "threejs": {
-          "responses": [
-            "I have hands-on experience with Three.js, a remarkable JavaScript library for creating 3D web projects and virtual reality experiences. Three.js provides a comprehensive set of tools and features that make it easier to develop interactive and visually stunning 3D applications. In fact, my thesis project, VR Jam, extensively utilizes Three.js to create a captivating virtual reality experience. You can explore more about VR Jam in the projects section of my portfolio, or you can access the GitHub repository directly.",
-            "Github Link: https://github.com/DavidC6473/VRJam.git"
-          ]
-        },
-        "typescript": {
-          "responses": [
-            "I have experience using TypeScript for developing some of my larger scale and collaborative projects. TypeScript has been instrumental in helping me maintain code robustness and minimizing bugs. One notable project where I utilized TypeScript, along with Three.js, Tone.js, Node.js, Express.js, and Socket.IO, is VR Jam, which was part of my Thesis project during my Masters course. If you're interested, you can find more details about VR Jam in the projects section. Additionally, you can explore the GitHub repository for VR Jam.",
-            "Github Link: https://github.com/DavidC6473/VRJam"
-          ]
-        }
-      }
+      ]
+    }
+  },
+  "entities": {
+    "api": {
+      "responses": [
+        "I have hands-on experience working with APIs to create interesting and functional websites. For instance, this chatbot that you're interacting with right now was created using the wit.ai API, enabling natural language understanding and response generation. Another project where I utilized an API is Art-Palette, which integrates the Unsplash API to generate art palettes based on user preferences. You can explore the Art-Palette project on GitHub: [GitHub Link](https://github.com/DavidC6473/Art-Palette.git)"
+      ]
+    },
+    "backend": {
+      "responses": [
+        "I have extensive experience in backend development using both Python with Django and Node.js with Express.js. Python, along with Django, provides a robust and scalable framework for building backend logic and web applications. On the other hand, Node.js and Express.js offer a JavaScript-based environment that allows for efficient and event-driven backend development. One notable project where I utilized Node.js and Express.js was my thesis project, VR Jam. It involved creating a backend system to support the virtual reality experience. You can find more information about this project in my portfolio's projects section or explore the GitHub repository directly: [GitHub Link](https://github.com/DavidC6473/VRJam.git)"
+      ]
+    },
+    "css": {
+      "responses": [
+        "CSS plays a vital role in web development as it allows me to style and enhance the visual appeal of websites, making them more user-friendly. I utilize CSS extensively in my projects to create beautiful and engaging designs. For example, the styling of this website you're currently browsing was achieved using CSS, in conjunction with HTML, JavaScript, and React. If you're interested in exploring the code and seeing how the website was styled, you can check out the GitHub repository: [GitHub Link](https://github.com/DavidC6473/Website-Development.git)"
+      ]
+    },
+    "deployment": {
+      "responses": [
+        "Filler response for deployment skill"
+      ]
+    },
+    "git": {
+      "responses": [
+        "Filler response for git skill"
+      ]
+    },
+    "html": {
+      "responses": [
+        "HTML is an essential skill in web development, and I frequently incorporate it into my development stack. It allows me to structure and create the foundation of web pages. In fact, this website you're currently viewing was made using HTML along with JavaScript, CSS, and React. If you'd like to explore the code and learn more about its development, you can check out the GitHub repository: [GitHub Link](https://github.com/DavidC6473/Website-Development.git)"
+      ]
+    },
+    "java": {
+      "responses": [
+        "While I don't have extensive experience with Java, I have worked with it in the context of Processing. Processing is a creative coding platform that utilizes Java for visual arts and interactive projects. I have created several projects using Java in Processing, showcasing my creativity and coding skills. One such project is Pronoun Usage, which can be found in the projects section of my portfolio. If you're interested in learning more about this project and exploring the code, you can find the GitHub repository: [GitHub Link](https://github.com/DavidC6473/Java-Pronoun-Use-Movies.git)"
+      ]
+    },
+    "javascript": {
+      "responses": [
+        "I have been working with JavaScript for the past two years and have gained proficiency in the language. When developing websites, I particularly enjoy using React, a popular JavaScript library for building user interfaces. For instance, I developed my personal website from scratch using JavaScript, HTML, CSS, and React. If you're interested, you can explore the GitHub repository for the website's development: [GitHub Link](https://github.com/DavidC6473/Website-Development.git)"
+      ]
+    },
+    "node_js": {
+      "responses": [
+        "I have extensive experience using Node.js and Express.js for backend development. Node.js provides a powerful runtime environment for building scalable and efficient server-side applications. Express.js, being a minimalist web application framework, complements Node.js perfectly, allowing me to develop robust APIs and handle routing efficiently. One project where I utilized Node.js and Express.js, along with Socket.IO, was my thesis project, VR Jam. The backend was developed using this technology stack to handle real-time communication and support the virtual reality experience. If you'd like to explore this project further, you can check it out on GitHub: [GitHub Link](https://github.com/DavidC6473/VRJam.git)"
+      ]
+    },
+    "python": {
+      "responses": [
+        "I find Python to be a powerful language for software development and backend logic in websites. It offers a wide range of libraries and frameworks that enhance productivity. I have been exploring Python's capabilities in various domains, including machine learning. One of my machine learning projects is a music genre classifier, which you can check out on GitHub: [GitHub Link](https://github.com/DavidC6473/music-genre-classifier.git). Additionally, I created a project for Ableton Live using Python, which allows for automation and streamlining of processes. You can check out the project on GitHub: [GitHub Link](https://github.com/DavidC6473/Automate-Ableton-Collect-And-Save.git). Furthermore, I have been learning Django to deploy my Python code to websites, enabling the development of robust web applications. Python's versatility and the Django framework provide a solid foundation for building powerful and scalable web projects."
+      ]
+    },
+    "react": {
+      "responses": [
+        "I thoroughly enjoy using React as my primary framework for website development. React's component-based architecture helps me organize my code and maintain a clear and structured project. It allows me to create interactive and efficient user interfaces. In fact, this website you're currently exploring was created using React, along with HTML, CSS, and JavaScript. If you're interested in delving into the code and learning more about the project, you can check out the GitHub repository: [GitHub Link](https://github.com/DavidC6473/Website-Development.git)"
+      ]
+    },
+    "swift": {
+      "responses": [
+        "I have experience working with Swift, Apple's programming language for iOS development. I have developed multi-page applications and worked extensively with Core Data, a powerful framework for data storage and management. One notable project where I utilized Swift is the NBA App, which can be found in the projects section of my portfolio. The NBA App was created using Swift in Xcode, and it showcases my skills in building interactive iPhone applications. If you'd like to explore the code and learn more about the project, you can find the GitHub repository: [GitHub Link](https://github.com/DavidC6473/Swift-NBA-Teams-App.git)"
+      ]
+    },
+    "threejs": {
+      "responses": [
+        "I have hands-on experience with Three.js, a remarkable JavaScript library for creating 3D web projects and virtual reality experiences. Three.js provides a comprehensive set of tools and features that make it easier to develop interactive and visually stunning 3D applications. In fact, my thesis project, VR Jam, extensively utilizes Three.js to create a captivating virtual reality experience. You can explore more about VR Jam in the projects section of my portfolio, or you can access the GitHub repository directly: [GitHub Link](https://github.com/DavidC6473/VRJam.git)"
+      ]
+    },
+    "typescript": {
+      "responses": [
+        "I have experience using TypeScript for developing some of my larger scale and collaborative projects. TypeScript has been instrumental in helping me maintain code robustness and minimizing bugs. One notable project where I utilized TypeScript, along with Three.js, Tone.js, Node.js, Express.js, and Socket.IO, is VR Jam, which was part of my Thesis project during my Masters course. If you're interested, you can find more details about VR Jam in the projects section. Additionally, you can explore the GitHub repository for VR Jam: [GitHub Link](https://github.com/DavidC6473/VRJam)"
+      ]
     }
   }
 }

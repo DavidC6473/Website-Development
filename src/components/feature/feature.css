@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 300px;
+    width: 400px;
     border: 1px solid #f06a00;
     border-radius: 8px;
     background-color: #161616;
@@ -70,3 +70,14 @@
     -webkit-text-fill-color: #b2a89f;
   }
   
+  button {
+    flex: 1;
+    font-family: var(--font-family);
+    box-shadow: none !important;
+    font-size: medium !important;
+    margin-bottom: 35px;
+    background-color: #b2a89f !important;
+    color: #161616 !important;
+    font-weight: bold !important;
+    border-radius: 5% !important;
+  }

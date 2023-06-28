@@ -1,16 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './feature.css';
 import responses from './responses.json';
 
 const Feature = () => {
   const [messages, setMessages] = useState([]);
   const [userMessage, setUserMessage] = useState('');
+  const messageContainerRef = useRef(null);
 
   useEffect(() => {
     const initialBotMessage =
       "Hi, I'm a ChatBot created by David. Ask me about David's skills and experience, and I will do my best to answer!";
     addMessage(initialBotMessage, 'bot');
   }, []);
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
+  const scrollToBottom = () => {
+    if (messageContainerRef.current) {
+      const messages = Array.from(messageContainerRef.current.getElementsByClassName('user'));
+      if (messages.length > 0) {
+        const latestUserMessage = messages[messages.length - 1];
+        latestUserMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
+  
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -41,7 +57,7 @@ const Feature = () => {
     const url = `https://api.wit.ai/message?v=20220618&q=${encodeURIComponent(
       message
     )}`;
-  
+
     try {
       const response = await fetch(url, {
         headers: {
@@ -49,12 +65,12 @@ const Feature = () => {
           'Content-Type': 'application/json',
         },
       });
-  
+
       const data = await response.json();
-  
+
       const intent = data.intents && data.intents[0] && data.intents[0].name;
-      const entities = data.entities && data.entities;
-  
+      const entities = data.entities && Object.keys(data.entities).map(entityName => data.entities[entityName][0].name).join(', ');
+
       const botMessage = getResponse(intent, entities);
       return botMessage;
     } catch (error) {
@@ -62,45 +78,37 @@ const Feature = () => {
       return "I'm sorry, I'm having trouble understanding you at the moment.";
     }
   };
-  
+
   const getResponse = (intent, entities) => {
     console.log("Intent:", intent);
     console.log("Entities:", entities);
-  
-    if (entities && Object.keys(entities).length > 0) {
-      const intentData = responses.intents[intent];
-      if (intentData && intentData.entities) {
-        for (const entityName in entities) {
-          const entityData = intentData.entities[entityName];
-          if (entityData) {
-            const entityValue = entities[entityName][0].value;
-            const entityResponse = entityData[entityValue] && entityData[entityValue].responses[0];
-            if (entityResponse) {
-              const githubLink = entityData[entityValue].githubLink;
-              if (githubLink) {
-                return `${entityResponse}\nGithub Link: ${githubLink}`;
-              } else {
-                return entityResponse;
-              }
-            }
-          }
+
+    if (entities) {
+      const entityNames = entities.split(', ');
+
+      for (const entityName of entityNames) {
+        const entityData = responses.entities && responses.entities[entityName];
+
+        if (entityData && entityData.responses && entityData.responses.length > 0) {
+          return entityData.responses[0];
         }
       }
     }
-  
-    // If entities are not present or no entity-specific response is found,
-    // fallback to intent-specific response
-    const intentData = responses.intents[intent];
-    if (intentData && intentData.responses.length > 0) {
-      return intentData.responses[0];
+
+    if (intent) {
+      const intentData = responses.intents && responses.intents[intent];
+
+      if (intentData && intentData.responses && intentData.responses.length > 0) {
+        return intentData.responses[0];
+      }
     }
-  
+
     return "I'm sorry, I'm not sure how to respond to that.";
   };
-  
+
   return (
     <div className="chatbot-container">
-      <div className="chatbot-messages">
+      <div className="chatbot-messages" ref={messageContainerRef}>
         {messages.map((message, index) => (
           <div
             key={index}
