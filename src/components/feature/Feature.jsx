@@ -5,6 +5,7 @@ import responses from './responses.json';
 const Feature = () => {
   const [messages, setMessages] = useState([]);
   const [userMessage, setUserMessage] = useState('');
+  const [collapsed, setCollapsed] = useState(false);
   const messageContainerRef = useRef(null);
 
   useEffect(() => {
@@ -26,7 +27,6 @@ const Feature = () => {
       }
     }
   };
-  
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -69,7 +69,11 @@ const Feature = () => {
       const data = await response.json();
 
       const intent = data.intents && data.intents[0] && data.intents[0].name;
-      const entities = data.entities && Object.keys(data.entities).map(entityName => data.entities[entityName][0].name).join(', ');
+      const entities =
+        data.entities &&
+        Object.keys(data.entities)
+          .map((entityName) => data.entities[entityName][0].name)
+          .join(', ');
 
       const botMessage = getResponse(intent, entities);
       return botMessage;
@@ -80,8 +84,8 @@ const Feature = () => {
   };
 
   const getResponse = (intent, entities) => {
-    console.log("Intent:", intent);
-    console.log("Entities:", entities);
+    console.log('Intent:', intent);
+    console.log('Entities:', entities);
 
     if (entities) {
       const entityNames = entities.split(', ');
@@ -106,27 +110,39 @@ const Feature = () => {
     return "I'm sorry, I'm not sure how to respond to that.";
   };
 
+  const toggleCollapsed = () => {
+    setCollapsed((prevState) => !prevState);
+  };
+  
   return (
-    <div className="chatbot-container">
-      <div className="chatbot-messages" ref={messageContainerRef}>
-        {messages.map((message, index) => (
-          <div
-            key={index}
-            className={`message ${message.sender === 'user' ? 'user' : 'bot'}`}
-          >
-            {message.text}
-          </div>
-        ))}
+    <div className={`chatbot-container ${collapsed ? 'collapsed' : ''}`}>
+      <div className="chatbot-header" onClick={toggleCollapsed}>
+        <span className="chatbot-title">ChatBot</span>
+        <button className="collapse-button">{collapsed ? '+' : '-'}</button>
       </div>
-      <form onSubmit={sendMessage}>
-        <input
-          type="text"
-          placeholder="Type your message..."
-          value={userMessage}
-          onChange={(e) => setUserMessage(e.target.value)}
-        />
-        <button type="submit">Send</button>
-      </form>
+      {!collapsed && (
+        <div className="chatbot-messages" ref={messageContainerRef}>
+          {messages.map((message, index) => (
+            <div
+              key={index}
+              className={`message ${message.sender === 'user' ? 'user' : 'bot'}`}
+            >
+              {message.text}
+            </div>
+          ))}
+        </div>
+      )}
+      {!collapsed && (
+        <form onSubmit={sendMessage}>
+          <input
+            type="text"
+            placeholder="Type your message..."
+            value={userMessage}
+            onChange={(e) => setUserMessage(e.target.value)}
+          />
+          <button type="submit">Send</button>
+        </form>
+      )}
     </div>
   );
 };
