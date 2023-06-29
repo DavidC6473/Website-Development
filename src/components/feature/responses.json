@@ -12,14 +12,14 @@
     },
     "Skills": {
       "responses": [
-        "Filler response for Skills"
+        "I have a diverse set of skills in web development. I completed a Master's in Interactive Media at University College Cork (UCC) with First Class Honours. During my studies, I created VR Jam, my thesis project, which involved using TypeScript, Three.js, Tone.js on the frontend, and Node.js, Express.js, and Socket.IO on the backend. VR Jam allowed users to interact over the web in virtual reality and play real-time music together. It was an exciting project that demonstrated my proficiency in these technologies.\n\nSince then, I have been continuously self-learning and improving my skills. I have gained expertise in Python, JavaScript, React, and Django. Additionally, I have worked on various projects involving APIs and even delved into machine learning.\n\nFeel free to ask me more about any specific skill!"
       ]
     }
   },
   "entities": {
     "ambition": {
       "responses": [
-        "Filler response for ambition"
+        "My ambition is to work as a full-stack developer in the future. Although I acknowledge that there is still much for me to learn, I am confident that given an opportunity, I can showcase my talents and make valuable contributions to a company. I have a keen interest in both frontend and backend development and have thoroughly enjoyed working on software development projects. I am constantly seeking new challenges and striving to expand my skills in order to achieve my ambition.\n\nIf you have any further questions or would like to know more about my skills, feel free to ask!"
       ]
     },
     "api": {
@@ -39,37 +39,37 @@
     },
     "deployment": {
       "responses": [
-        "Filler response for deployment skill"
+        "While I don't have extensive experience with specific deployment systems like AWS, I have successfully deployed several projects on personal domains. I have worked with Ubuntu servers to deploy projects on domains and utilized SFTP (Secure File Transfer Protocol) to upload files. I understand the process and requirements of deploying web applications and have hands-on experience in making projects accessible online."
       ]
     },
     "education": {
       "responses": [
-        "Filler response for education"
+        "I have a diverse educational background that has contributed to my skills in web development. In 2020, I completed a degree in Construction Management & Engineering from the University of Limerick. However, after careful consideration, I decided to pursue a career change that led me to the field of web development.\n\nTo further my knowledge and expertise in this area, I enrolled in a Master's program in Interactive Media at University College Cork. During this program, I learned various web development principles and acquired several valuable skills. I gained experience in scripting with Python, image processing with Python, prototyping with Java, iPhone development with Swift, and more. Additionally, I explored design concepts using Blender, audio processing with Logic, and video editing with Premiere Pro.\n\nI successfully completed the Master's program with a First Class Honours, further solidifying my foundation in web development. If you have any specific questions about the skills I acquired, feel free to ask!"
       ]
     },
     "experience": {
       "responses": [
-        "Filler response for experience"
+        "While I don't have any professional experience specifically in web development, I have worked in professional settings in the past, which has contributed to my overall skills and abilities. I have valuable experience as a production operator at Johnson & Johnson in Limerick, where I gained insights into working efficiently and effectively within a team-oriented environment.\n\nAdditionally, I served as a junior Project Manager for Townmore Construction in Dublin, overseeing the redevelopment of a major hotel in the city center. This experience allowed me to develop skills in project management, coordination, and effective communication.\n\nTo learn more about my overall experience and qualifications, you can refer to my detailed resume available at the following link: [GitHub Link](https://drive.google.com/file/d/1kSpHakbIRiE8FOFFsqaDTQ0f7hzUUDoR/view)"
       ]
     },
     "framework": {
       "responses": [
-        "Filler response for framework"
+        "The main frameworks I use in my web development projects are React.js for frontend development and Express.js or Django for backend development.\n\nI frequently utilize React.js to build dynamic and interactive user interfaces. In fact, this website you're currently browsing was created using React.js, along with HTML, CSS, and JavaScript. If you're interested in exploring the code and seeing how the website was developed, you can check out the GitHub repository [GitHub Link](https://github.com/DavidC6473/Website-Development.git).\n\nFor backend development, I have experience with both Express.js and Django. In one of my significant projects, my thesis project called VR Jam, I utilized Node.js and Express.js for the backend. You can find my write-up on the project on my website [GitHub Link](https://david-clarke.com/vrjam), and the corresponding GitHub repository for the project [GitHub Link](https://github.com/DavidC6473/VRJam.git). \n\nIf you have any specific questions about my experience with these frameworks, feel free to ask!"
       ]
     },
     "frontend": {
       "responses": [
-        "Filler response for frontend"
+        "I have experience in frontend development using JavaScript and TypeScript along with HTML and CSS. My preferred framework for frontend development is React.js.\n\nI enjoy creating visually appealing and user-friendly websites. In fact, this website you're currently browsing was developed using JavaScript, HTML, CSS, and React.js. If you're interested in exploring the code and seeing how the website was built, you can check out the GitHub repository [GitHub Link](https://github.com/DavidC6473/Website-Development.git).\n\nOne project that showcases my frontend skills is Art Palette. It's a project where I integrated the Unsplash API to display random photos and generate their corresponding color palettes. If you'd like to explore this project and see how I implemented it using JavaScript, React.js, HTML, and CSS, you can find the GitHub repository [GitHub Link](https://github.com/DavidC6473/Art-Palette.git)."
       ]
     },
     "git": {
       "responses": [
-        "Filler response for git skill"
+        "Git is an essential tool for version control in software development, and I'm proficient in using it.\n\nI utilize Git for managing my code repositories and tracking changes. I regularly use Git commands such as commit, branch, merge, and push to ensure a smooth and organized workflow.\n\nIf you're interested in exploring my Git repositories, you can visit my GitHub profile: [GitHub Link](https://github.com/DavidC6473)"
       ]
     },
     "github": {
       "responses": [
-        "Filler response for GitHub"
+        "I actively use GitHub to showcase my projects.\n\nYou can find my GitHub profile [GitHub Link](https://github.com/DavidC6473). There, you'll find a collection of my open-source projects, code samples, and contributions.\n\nFeel free to explore my repositories and discover the various projects I've worked on."
       ]
     },
     "html": {
@@ -94,7 +94,7 @@
     },
     "portfolio": {
       "responses": [
-        "Filler response for portfolio"
+        "This is my portfolio website! I created it from scratch using Javascript and React. Even this ChatBot was created by me from scratch using the wit.ai API. I have a few select projects on display on this site but I have many more on my github which you can find [GitHub Link](https://github.com/DavidC6473)"
       ]
     },
     "python": {
@@ -109,7 +109,7 @@
     },
     "resume": {
       "responses": [
-        "Filler response for resume"
+        "If you'd like to take a look at my resume, you can find it [GitHub Link](https://drive.google.com/file/d/1kSpHakbIRiE8FOFFsqaDTQ0f7hzUUDoR/view). It provides detailed information about my education, skills, work experience, and contact details.\n\nPlease feel free to reach out to me using the contact form below or using any of my contact details provided in the resume if you have any questions or would like to discuss potential opportunities."
       ]
     },
     "swift": {
