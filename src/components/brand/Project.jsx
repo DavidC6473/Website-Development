@@ -19,7 +19,7 @@ const Project = () => {
                     <p class='dc__projects-animation'><a className='a_p3' href="/turtle">Python Fractals</a></p>
                 </div>
                 <div className='project4'>
-                    <p class='dc__projects-animation'><a className='a_p4' href="/java">Pronoun Usage</a></p>
+                    <p class='dc__projects-animation'><a className='a_p4' href="/java">Art-Palette</a></p>
                 </div>
             </div>
         </div>
