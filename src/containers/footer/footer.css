@@ -139,6 +139,21 @@ textarea[name=message]::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+.send-button {
+  color: #f06a00 !important;
+  background-color: #161616 !important;
+  width: 100px !important;
+  border-radius: 2% !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: #f06a00 0px 4px 12px !important;
+}
+
+.send-button:hover {
+  color: #161616 !important;
+  box-shadow: #161616 0px 4px 12px !important;
+}
+
 @media screen and (max-width: 1300px) {
   .dc__footer {
     display: flex;

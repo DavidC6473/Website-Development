@@ -49,15 +49,14 @@
   text-align: center;
   color: var(--color-bg);
   font-family: var(--font-family);
-  font-weight: 800;
   font-size: 4vmax;
   line-height: 10vmax;
-  text-transform: capitalize;
   -webkit-text-stroke-width: 8px;
   -webkit-text-stroke-color: var(--title-text);
   cursor: default;
   z-index: 0;
   margin-top: -100px; /* Adjust this value to match the height of your navbar */
+  text-emphasis: none;
 }
 
 .title__text:hover::before {
@@ -111,7 +110,7 @@
   flex-direction: column;
   background-color: #161616;
   border-color: #f06a00;
-  height: 20vmax;
+  height: 30vmax;
   width: 65vw;
   box-shadow: #f06a00 0px 4px 12px;
   transition-delay: 10s;
@@ -160,10 +159,8 @@
   .about-content {
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-weight: 700;
     font-size: 5vh;
     line-height: 2.3vh;
-    text-transform: capitalize;
     text-align: center;
     margin: 0 1rem;
     padding-left: 2rem;
@@ -220,10 +217,8 @@
     text-align: center;
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-weight: 800;
     font-size: 4vmax;
     line-height: 10vmax;
-    text-transform: capitalize;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: var(--title-text);
     cursor: default;
@@ -379,10 +374,8 @@
     text-align: center;
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-weight: 800;
     font-size: 4.3vmax;
     line-height: 10vmax;
-    text-transform: capitalize;
     -webkit-text-stroke-width: .25rem;
     -webkit-text-stroke-color: var(--title-text);
     cursor: default;
@@ -489,10 +482,8 @@
     text-align: center;
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-weight: 800;
     font-size: 4vmax;
     line-height: 10vmax;
-    text-transform: capitalize;
     -webkit-text-stroke-width: .25rem;
     -webkit-text-stroke-color: var(--title-text);
     cursor: default;
@@ -599,10 +590,8 @@
     text-align: center;
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-weight: 800;
     font-size: 3.2vmax;
     line-height: 10vmax;
-    text-transform: capitalize;
     -webkit-text-stroke-width: .2rem;
     -webkit-text-stroke-color: var(--title-text);
     cursor: default;
