@@ -1,22 +1,23 @@
 import React from 'react';
 import './java.css';
-import JavaImage from './java.png';
+import JavaImage from './Palette1.PNG';
 
 const Java = () => {
   return (
     <div className='java-container'>
       <div className='java-content'>
-        <h2 className='java-heading'>Pronoun Usage</h2>
+        <h2 className='java-heading'>Art-Palette</h2>
         <div className='java-image-container'>
           <img className='java-image' src={JavaImage} alt='An image' />
         </div>
-        <p className='java-paragraph'>In this project, I developed a Processing sketch that allows a user to explore movie dialogue and test the number of personal pronouns used by a character. The project involved working with external datasets in CSV format, which required configuring the Processing environment to use more memory. To represent the datasets, I used the Table data type.</p>
-        <p className='java-paragraph'>The sketch features a user interface implemented using a GUI library, where the user can select a movie from a large list of movies stored in the movie_titles_metadata dataset. Once a movie is selected, the sketch extracts all of the dialogue in the movie_lines dataset relating to the selected character.</p>
-        <p className='java-paragraph'>To analyze each line of dialogue, I used the RiTa library, which provides functions for natural language processing without the overhead of a full NLP or machine-learning stack. In particular, I used RiTa.pos to identify the Penn part-of-speech tags. Once the character lines were analyzed, I identified how many of them contained personal pronouns by calculating the percentage of lines of dialogue containing a personal pronoun.</p>
-        <p className='java-paragraph'>The results are presented to the user on a CP5 Pie chart. The sketch also features a drop-down menu that allows the user to select a character from the selected movie, which triggers the extraction and analysis of the character's lines.</p>
-        <p className='java-paragraph'>Overall, this project required a lot of attention to detail and problem-solving skills, particularly when it came to optimizing the memory usage of the Processing environment and ensuring the accurate counting of personal pronouns.</p>
+        <p className='java-paragraph'>I created this React web application that allows users to dive into a world of random photos sourced from the Unsplash API and explore their associated color palettes. Let me walk you through the features and functionality of this app.</p>
+        <p className='java-paragraph'>When you first launch Art Palette, you'll be greeted with a grid of 30 randomly selected photos, all fetched dynamically from the Unsplash API. Each photo offers a glimpse into the diverse and captivating world of visual imagery.</p>
+        <p className='java-paragraph'>Upon selecting a photo that catches your eye, a sleek and elegant modal window appears, showcasing the chosen photo along with its unique color palette. To create these palettes, I employed the powerful Colour Thief library, which extracts prominent colors from the selected image. The result is a beautiful arrangement of color swatches that harmonize with the photo's visual theme.</p>
+        <p className='java-paragraph'>One of the standout aspects of Art Palette is the dynamic background color of the modal. To ensure an aesthetically pleasing contrast, I implemented a clever algorithm that calculates the opposite color on the color wheel based on the dominant color in the palette. This creates a visually striking effect, enhancing the overall experience.</p>
+        <p className='java-paragraph'>I wanted to provide users with the ability to interact with the color palettes and easily incorporate them into their creative endeavors. You can simply click on any individual color swatch, and its value will be copied directly to your clipboard. This makes it effortless to integrate these colors into your design projects or share them with others. And if you prefer to copy the entire color palette at once, there's a convenient "Copy Palette" button that does just that.</p>
+        <p className='java-paragraph'>To make Art Palette even more tailored to your preferences, I implemented a search function. You can enter specific keywords in the search bar to narrow down the selection of random photos displayed. This allows you to curate the collection and explore images that align with your interests and creative vision.</p>
         <p className='java-paragraph'>Feel free to check out this project and others on my GitHub: </p>
-        <p className='java-paragraph'><a className='java-link' href='https://github.com/DavidC6473/Java-Pronoun-Use-Movies' target='_blank'>https://github.com/DavidC6473/Java-Pronoun-Use-Movies</a></p>
+        <p className='java-paragraph'><a className='java-link' href='https://github.com/DavidC6473/Art-Palette' target='_blank'>https://github.com/DavidC6473/Art-Palette</a></p>
       </div>
     </div>
   );
