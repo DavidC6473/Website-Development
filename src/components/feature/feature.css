@@ -58,12 +58,13 @@
     align-items: center;
     font-size: smaller;
     box-shadow: none !important;
+    padding-top: 35px !important;
   }
   
-  input {
-    flex: 1;
-    border: none;
-    font-family: var(--font-family);
+  .your-message {
+    flex: 1 !important;
+    border: none !important;
+    font-family: var(--font-family) !important;
     font-size: medium !important;
     box-shadow: none !important;
     background-color:#161616 !important;
@@ -71,13 +72,72 @@
   }
   
   button {
-    flex: 1;
-    font-family: var(--font-family);
+    flex: 1 !important;
+    font-family: var(--font-family) !important;
     box-shadow: none !important;
     font-size: medium !important;
     margin-bottom: 35px;
     background-color: #b2a89f !important;
     color: #161616 !important;
     font-weight: bold !important;
-    border-radius: 5% !important;
+    border-radius: 15% !important;
+    margin-right: 35px !important;
+    margin-left: 35px !important;
+    transition: background-color 0.3s ease;
+    transition: color 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #847365 !important;
+    color: #f06a00 !important;
+    transform: scale(1.05);
+  }
+
+  .chatbot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    padding: 10px;
+    align-content: center !important;
+    align-self: center !important;
+  }
+  
+  .collapse-button {
+    color: #161616 !important;
+    background-color: #f06a00 !important;
+    border: none !important;
+    width: 30px !important;
+    height: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 5px !important;
+    padding: 0 !important;
+    box-sizing: content-box !important;
+    flex-shrink: 0 !important;
+    line-height: 1 !important;
+    border-radius: 5px !important;
+    font-size: larger !important;
+    font-weight: bolder !important;
+  }
+
+  .collapse-button:hover {
+    transform: scale(1.05);
+    background-color: #f06a00 !important;
+    color: #161616 !important;
+  }
+
+  .submit-button {
+    box-shadow: none !important;
+  }
+
+  .chatbot-link {
+    color: #f06a00;
+    text-decoration: underline;
+  }  
+  
+  @media only screen and (max-width: 1050px) {
+    .chatbot-container {
+      display: none;
+    }
   }

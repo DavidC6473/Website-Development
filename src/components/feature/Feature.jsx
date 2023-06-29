@@ -8,6 +8,14 @@ const Feature = () => {
   const [collapsed, setCollapsed] = useState(false);
   const messageContainerRef = useRef(null);
 
+  const renderers = {
+    link: (props) => (
+      <a href={props.href} target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>
+        {props.children}
+      </a>
+    ),
+  };
+
   useEffect(() => {
     const initialBotMessage =
       "Hi, I'm a ChatBot created by David. Ask me about David's skills and experience, and I will do my best to answer!";
@@ -86,61 +94,72 @@ const Feature = () => {
   const getResponse = (intent, entities) => {
     console.log('Intent:', intent);
     console.log('Entities:', entities);
-
+  
     if (entities) {
       const entityNames = entities.split(', ');
-
+  
       for (const entityName of entityNames) {
         const entityData = responses.entities && responses.entities[entityName];
-
+  
         if (entityData && entityData.responses && entityData.responses.length > 0) {
-          return entityData.responses[0];
+          return entityData.responses[0].replace(
+            /\[GitHub Link\]\((.*?)\)/g,
+            '<a href="$1" target="_blank" rel="noopener noreferrer" style="color: #b2a89f; text-decoration: underline; text-decoration-color: #f06a00; font-weight: bold;">Here</a>'
+          );
         }
       }
     }
-
+  
     if (intent) {
       const intentData = responses.intents && responses.intents[intent];
-
+  
       if (intentData && intentData.responses && intentData.responses.length > 0) {
-        return intentData.responses[0];
+        return intentData.responses[0].replace(
+          /\[GitHub Link\]\((.*?)\)/g,
+          '<a href="$1" target="_blank" rel="noopener noreferrer" style="color: #b2a89f; text-decoration: underline; text-decoration-color: #f06a00; font-weight: bold;">Here</a>'
+        );
       }
     }
-
+  
     return "I'm sorry, I'm not sure how to respond to that.";
   };
-
+  
   const toggleCollapsed = () => {
     setCollapsed((prevState) => !prevState);
   };
-  
+
+  const renderMessages = () => {
+    return messages.map((message, index) => (
+      <div key={index} className={`message ${message.sender === 'user' ? 'user' : 'bot'}`}>
+        {message.sender === 'user' ? (
+          message.text
+        ) : (
+          <div dangerouslySetInnerHTML={{ __html: message.text }}></div>
+        )}
+      </div>
+    ));
+  };
+
   return (
     <div className={`chatbot-container ${collapsed ? 'collapsed' : ''}`}>
       <div className="chatbot-header" onClick={toggleCollapsed}>
-        <span className="chatbot-title">ChatBot</span>
         <button className="collapse-button">{collapsed ? '+' : '-'}</button>
       </div>
       {!collapsed && (
         <div className="chatbot-messages" ref={messageContainerRef}>
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`message ${message.sender === 'user' ? 'user' : 'bot'}`}
-            >
-              {message.text}
-            </div>
-          ))}
+          {renderMessages()}
         </div>
       )}
       {!collapsed && (
         <form onSubmit={sendMessage}>
           <input
+            className='your-message'
             type="text"
             placeholder="Type your message..."
             value={userMessage}
             onChange={(e) => setUserMessage(e.target.value)}
           />
-          <button type="submit">Send</button>
+          <button className='submit-button' type="submit">Send</button>
         </form>
       )}
     </div>
