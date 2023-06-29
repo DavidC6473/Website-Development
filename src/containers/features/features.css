@@ -14,14 +14,15 @@
         position: relative;
         padding: 5vw;
         text-align: center;
-        -webkit-text-stroke-width: .35vw;
+        -webkit-text-stroke-width: .3vw;
         -webkit-text-stroke-color: var(--title-text);
         color: #847365;
         font-family: var(--font-family);
-        font-weight: 800;
+        font-weight: bolder;
         font-size: 2vmax;
         text-transform: uppercase;
         line-height: 3.5vmax;
         text-rendering: optimizeLegibility;
+        margin-bottom: 5vh;
     }
 }
