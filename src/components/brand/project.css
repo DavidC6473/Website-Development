@@ -49,7 +49,6 @@
   transition-duration: 0.1s;
 }
 
-
 .dc__projects-content {
   flex: 1;
   display: flex;
@@ -66,10 +65,8 @@
 .a_p2,
 .a_p3,
 .a_p4 {
-  
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #847365;
-  
   text-shadow: #847365 0px 0px 12px;
 }
 
@@ -139,63 +136,113 @@
   text-align: center;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 2rem;
-}
+/* Modal Styles */
 
-.skill {
+.modal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
-}
-
-.skill img {
-  width: 100px;
-  height: 100px;
-  background-color: #847365;
-  border-radius: 50%;
-}
-
-.skill p {
-  margin-top: 0.5rem;
-  color: #847365;
-  text-align: center;
-}
-
-.skill-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #847365;
+  justify-content: space-evenly;
+  background: #b2a89f;
+  color: #161616;
   padding: 2rem;
-  color: #fff;
-}
-
-.skill-modal h2 {
-  margin-top: 0;
+  border-radius: 1%;
+  width: 60vw;
+  height: 60vh;
+  margin: 0 auto;
   text-align: center;
+  z-index: 10000;
+  position: relative;
 }
 
-.skill-modal button {
-  display: block;
-  margin: 1rem auto;
-  padding: 0.5rem 1rem;
-  background-color: #f06a00;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  backdrop-filter: blur(8px);
+}
+
+.modal-logo {
+  font-size: 8rem;
+  margin-bottom: 2rem;
+  color: #161616;
+}
+
+.modal-skill-name {
+  font-size: xx-large;
+  margin-bottom: 1rem;
+  z-index: 10000;
+  font-family: var(--font-family);
+  color: #161616;
+}
+
+.modal-close-button {
+  position: absolute; /* Add position absolute */
+  top: 10px; /* Adjust top position as needed */
+  right: 10px;
+  background: none !important;
+  color: #161616 !important;
+  border: none !important;
+  font-size: 1.2rem;
   cursor: pointer;
+  margin-top: 1rem;
+  z-index: 10000;
+  font-size: x-large !important;
 }
 
-.skill-modal button:hover {
-  background-color: #d95000;
+.modal-close-button:hover {
+  color: #f06a00 !important;
 }
 
+.modal-close-button:hover {
+  color: #161616;
+}
+
+.modal-text {
+  font-family: var(--font-family);
+  color: #161616;
+  font-size: large;
+  margin-bottom: 1rem;
+}
+
+.modal-link {
+  font-family: var(--font-family);
+  color: #f06a00;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 1rem; 
+}
+
+@media screen and (max-width: 1800px) {
+  .modal {
+    width: 70vw;
+    height: 80vh;
+  }
+  
+  .modal-logo {
+    font-size: 7rem;
+  }
+  
+  .modal-skill-name {
+    font-size: xx-large;
+  }
+
+  .modal-text {
+    font-size: smaller;
+  }
+  
+  .modal-link {
+    font-size: small;
+    font-weight: bold;
+  }
+}
 
   @media screen and (max-width: 1300px) {
     .dc__projects {
@@ -205,7 +252,28 @@
       background: #161616;
       z-index: 1;
     }
+
+    .modal {
+      width: 70vw;
+      height: 80vh;
+    }
     
+    .modal-logo {
+      font-size: 7rem;
+    }
+    
+    .modal-skill-name {
+      font-size: xx-large;
+    }
+
+    .modal-text {
+      font-size: smaller;
+    }
+    
+    .modal-link {
+      font-size: small;
+      font-weight: bold;
+    }
     
     .dc__projects-content {
       flex: 4;
@@ -298,7 +366,31 @@
       z-index: 1;
     }
     
+    .dc__skill i {
+      font-size: 3.5rem;
+    }
     
+    .dc__skill-name {
+      font-size: 1.2rem;
+    }
+
+    .modal-logo {
+      font-size: 6rem;
+    }
+    
+    .modal-skill-name {
+      font-size: x-large;
+    }
+
+    .modal-text {
+      font-size: smaller;
+    }
+    
+    .modal-link {
+      font-size: small;
+      font-weight: bold;
+    }
+
     .dc__projects-content {
       flex: 3;
       display: flex;
@@ -484,6 +576,13 @@
       z-index: 1;
     }
     
+    .dc__skill i {
+      font-size: 3rem;
+    }
+    
+    .dc__skill-name {
+      font-size: 1rem;
+    }
     
     .dc__projects-content {
       flex: 3;
@@ -568,6 +667,16 @@
       text-align: center;
     }
   }
+
+  @media screen and (max-width: 710px) {
+    .dc__skill i {
+      font-size: 2rem;
+    }
+    
+    .dc__skill-name {
+      font-size: .9rem;
+    }
+  }
   
   @media screen and (max-width: 420px) {
     .dc__projects {
@@ -577,8 +686,37 @@
       background: #161616;
       z-index: 1;
     }
+
+    .dc__skill i {
+      font-size: 1.5rem;
+    }
     
+    .dc__skill-name {
+      font-size: .5rem;
+    }
     
+    .modal {
+      width: 85vw;
+      height: 70vh;
+    }
+
+    .modal-logo {
+      font-size: 5rem;
+    }
+    
+    .modal-skill-name {
+      font-size: large;
+    }
+
+    .modal-text {
+      font-size: x-small;
+    }
+    
+    .modal-link {
+      font-size: smaller;
+      font-weight: bold;
+    }
+
     .dc__projects-content {
       flex: 3;
       display: flex;
@@ -677,7 +815,28 @@
       justify-content: center;
     }
     
+    .modal {
+      width: 90vw;
+      height: 80vh;
+    }
+
+    .modal-logo {
+      font-size: 4rem;
+    }
     
+    .modal-skill-name {
+      font-size: small;
+    }
+
+    .modal-text {
+      font-size: xx-small;
+    }
+    
+    .modal-link {
+      font-size: x-small;
+      font-weight: bold;
+    }
+
     .dc__projects-content {
       flex: 3;
       display: flex;

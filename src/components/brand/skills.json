@@ -1,0 +1,51 @@
+[
+    {
+      "name": "JS",
+      "logo": "devicon-javascript-plain",
+      "paragraph": "I have been working with JavaScript for the past two years and have gained proficiency in the language. When developing websites, I particularly enjoy using React, a popular JavaScript library for building user interfaces. For instance, I developed my personal website from scratch using JavaScript, HTML, CSS, and React. If you're interested, you can explore the GitHub repository for the website's development:",
+      "link": "https://github.com/DavidC6473/Website-Development.git"
+    },
+    {
+      "name": "TS",
+      "logo": "devicon-typescript-plain",
+      "paragraph": "I have experience using TypeScript for developing some of my larger scale and collaborative projects. TypeScript has been instrumental in helping me maintain code robustness and minimizing bugs. One notable project where I utilized TypeScript, along with Three.js, Tone.js, Node.js, Express.js, and Socket.IO, is VR Jam, which was part of my Thesis project during my Masters course. If you're interested, you can find more details about VR Jam in the projects section.\n\n\n Additionally, you can explore the GitHub repository for VR Jam:",
+      "link": "https://github.com/DavidC6473/VRJam"
+    },
+    {
+      "name": "React",
+      "logo": "devicon-react-original",
+      "paragraph": "I thoroughly enjoy using React as my primary framework for website development. React's component-based architecture helps me organize my code and maintain a clear and structured project. It allows me to create interactive and efficient user interfaces. In fact, this website you're currently exploring was created using React, along with HTML, CSS, and JavaScript. If you're interested in delving into the code and learning more about the project, you can check out the GitHub repository:",
+      "link": "https://github.com/DavidC6473/Website-Development.git"
+    },
+    {
+      "name": "Python",
+      "logo": "devicon-python-plain",
+      "paragraph": "I find Python to be a powerful language for software development and backend logic in websites. It offers a wide range of libraries and frameworks that enhance productivity. I have been exploring Python's capabilities in various domains, including machine learning. One of my machine learning projects is a music genre classifier, which you can check out on GitHub below. Furthermore, I have been learning Django to deploy my Python code to websites, enabling the development of robust web applications. Python's versatility and the Django framework provide a solid foundation for building powerful and scalable web projects.",
+      "link": "https://github.com/DavidC6473/music-genre-classifier.git"
+    },
+    {
+      "name": "NodeJS",
+      "logo": "devicon-nodejs-plain",
+      "paragraph": "I have extensive experience using Node.js for backend development. Node.js provides a powerful runtime environment for building scalable and efficient server-side applications. One project where I utilized Node.js, along with Express.js and Socket.IO, was my thesis project, VR Jam. The backend was developed using this technology stack to handle real-time communication and support the virtual reality experience. If you'd like to explore this project further, you can check it out on GitHub:",
+      "link": "https://github.com/DavidC6473/VRJam.git"
+    },
+    {
+      "name": "ExpressJS",
+      "logo": "devicon-express-original",
+      "paragraph": "I have extensive experience using Express.js for backend development. Express.js, being a minimalist web application framework, complements Node.js perfectly, allowing me to develop robust APIs and handle routing efficiently. One project where I utilized Express.js, along with Node.js and Socket.IO, was my thesis project, VR Jam. The backend was developed using this technology stack to handle real-time communication and support the virtual reality experience. If you'd like to explore this project further, you can check it out on GitHub:",
+      "link": "https://github.com/DavidC6473/VRJam.git"
+    },
+    {
+      "name": "Swift",
+      "logo": "devicon-swift-plain",
+      "paragraph": "I have experience working with Swift, Apple's programming language for iOS development. I have developed multi-page applications and worked extensively with Core Data, a powerful framework for data storage and management. One notable project where I utilized Swift is the NBA App, which can be found in the projects section of my portfolio. The NBA App was created using Swift in Xcode, and it showcases my skills in building interactive iPhone applications. If you'd like to explore the code and learn more about the project, you can find the GitHub repository:",
+      "link": "https://github.com/DavidC6473/Swift-NBA-Teams-App.git"
+    },
+    {
+      "name": "Git",
+      "logo": "devicon-git-plain",
+      "paragraph": "Git is an essential tool for version control in software development, and I'm proficient in using it.\n\nI utilize Git for managing my code repositories and tracking changes. I regularly use Git commands such as commit, branch, merge, and push to ensure a smooth and organized workflow.\n\nIf you're interested in exploring my Git repositories, you can visit my GitHub profile:",
+      "link": "https://github.com/DavidC6473"
+    }
+  ]
+  
