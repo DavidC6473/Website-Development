@@ -6,6 +6,49 @@
   z-index: 1;
 }
 
+.dc__skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4vw;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.dc__skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dc__skill i {
+  font-size: 4rem;
+  color: #847365;
+  transition: color 0.8s ease-out;
+}
+
+.dc__skill i:hover {
+  color: #f06a00;
+  transition-duration: 0.1s;
+}
+
+.dc__skill-name {
+  margin-top: 0.5rem;
+  color: #847365;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--font-family);
+  transition: color 0.8s ease-out;
+}
+
+.dc__skill-name:hover {
+  color: #b2a89f;
+  transition-duration: 0.1s;
+}
+
 
 .dc__projects-content {
   flex: 1;
@@ -95,20 +138,64 @@
   display: flex;
   text-align: center;
 }
-/*
-.project1:hover {
-  position: relative
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
 }
 
-.project1:hover:after { 
-  content: url(/src/assets/VRJam.png);  
-  display: block;
-  position: absolute;
-  transform: scale(.3);
-  right: -10vmax;  change this value to one that suits you 
-  top: -550px;  change this value to one that suits you 
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
-  */
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  background-color: #847365;
+  border-radius: 50%;
+}
+
+.skill p {
+  margin-top: 0.5rem;
+  color: #847365;
+  text-align: center;
+}
+
+.skill-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #847365;
+  padding: 2rem;
+  color: #fff;
+}
+
+.skill-modal h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.skill-modal button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #f06a00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.skill-modal button:hover {
+  background-color: #d95000;
+}
+
 
   @media screen and (max-width: 1300px) {
     .dc__projects {
