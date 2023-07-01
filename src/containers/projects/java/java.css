@@ -1,63 +1,100 @@
 .java-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #161616;
-    padding: 2rem;
-  }
-  
-  .java-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    cursor: default;
-    max-width: 75%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-  }
-  
-  .java-heading {
-    flex: 3;
-    color: #161616;
-    font-family: var(--font-family);
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    -webkit-text-stroke-width: .1rem;
-    -webkit-text-stroke-color: #f06a00;
-    text-shadow: #f06a00 0px 0px 6px;
-  }
-  
-  .java-image {
-    flex: 2;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    box-shadow: #f06a00 0px 4px 12px;
-    border-radius: 5px;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-  }
-  
-  .java-paragraph {
-    flex: 2;
-    color: var(--color-bg);
-    font-family: var(--font-family);
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 2.5rem;
-    margin-top: 2rem;
-  }
-  
-  .java-link {
-    color: #f06a00;
-    text-shadow: #f06a00 0px 0px .3rem;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #161616;
+  padding: 2rem;
+}
+
+.java-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  cursor: default;
+  max-width: 75%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.java-heading {
+  flex: 3;
+  color: #161616;
+  font-family: var(--font-family);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  -webkit-text-stroke-width: .1rem;
+  -webkit-text-stroke-color: #f06a00;
+  text-shadow: #f06a00 0px 0px 6px;
+}
+
+.java-image-container {
+  position: relative; /* Add position relative to the container */
+  flex: 2;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+.java-image {
+  width: 100%;
+  height: auto;
+}
+
+.java-paragraph {
+  flex: 2;
+  color: var(--color-bg);
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+}
+
+.java-link {
+  color: #f06a00;
+  text-shadow: #f06a00 0px 0px .3rem;
+}
+
+.java-arrow-left,
+.java-arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none !important;
+  border: none !important;
+  color: #161616 !important;
+  font-size: 4rem !important;
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+.java-arrow-left {
+  left: 0;
+}
+
+.java-arrow-right {
+  right: 0;
+}
+
+.java-arrow-left:hover,
+.java-arrow-right:hover {
+  color: #f06a00 !important;
+  background: none !important;
+  animation: none; 
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
   @media screen and (max-width: 1050px) {
     .java-container {
       display: flex;
@@ -80,6 +117,10 @@
       -webkit-text-stroke-color: #f06a00;
       text-shadow: #f06a00 0px 0px 0rem;
     }
+
+    .java-image-container {
+      box-shadow: transparent !important;
+    }
     
     .java-image {
       flex: 2;
@@ -87,7 +128,7 @@
       height: auto;
       display: block;
       margin: 0 auto;
-      box-shadow: #f06a00 0px 4px 12px;
+      box-shadow: none !important;
       border-radius: 4px;
       margin-top: 3vw;
       margin-bottom: 3vw;
@@ -101,6 +142,11 @@
       text-align: justify;
       line-height: 1.8rem;
       margin-top: 2rem;
+    }
+
+    .java-arrow-left,
+    .java-arrow-right {
+      font-size: 1.5rem !important;
     }
   }
   
@@ -126,6 +172,10 @@
       -webkit-text-stroke-color: #f06a00;
       text-shadow: #f06a00 0px 0px 0rem;
     }
+
+    .java-image-container {
+      box-shadow: none !important;
+    }
     
     .java-image {
       flex: 2;
@@ -133,7 +183,7 @@
       height: auto;
       display: block;
       margin: 0 auto;
-      box-shadow: #f06a00 0px 4px 8px;
+      box-shadow: none;
       border-radius: 4px;
       margin-top: 3vw;
       margin-bottom: 3vw;
@@ -147,5 +197,10 @@
       text-align: justify;
       line-height: 1.2rem;
       margin-top: 2rem;
+    }
+
+    .java-arrow-left,
+    .java-arrow-right {
+      font-size: 1.5rem !important;
     }
   }

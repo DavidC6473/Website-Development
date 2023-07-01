@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './java.css';
-import JavaImage from './Palette1.PNG';
+import JavaImage1 from './Palette1.PNG';
+import JavaImage2 from './Palette2.PNG';
+import JavaImage3 from './Palette3.PNG';
 
 const Java = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [JavaImage1, JavaImage2, JavaImage3];
+
+  const nextSlide = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
   return (
     <div className='java-container'>
       <div className='java-content'>
         <h2 className='java-heading'>Art-Palette</h2>
         <div className='java-image-container'>
-          <img className='java-image' src={JavaImage} alt='An image' />
+          <img className='java-image' src={images[currentImageIndex]} alt='An image' />
+          <button className='java-arrow-left' onClick={prevSlide}>&lt;</button>
+          <button className='java-arrow-right' onClick={nextSlide}>&gt;</button>
         </div>
         <p className='java-paragraph'>I created this React web application that allows users to dive into a world of random photos sourced from the Unsplash API and explore their associated color palettes. Let me walk you through the features and functionality of this app.</p>
         <p className='java-paragraph'>When you first launch Art Palette, you'll be greeted with a grid of 30 randomly selected photos, all fetched dynamically from the Unsplash API. Each photo offers a glimpse into the diverse and captivating world of visual imagery.</p>
