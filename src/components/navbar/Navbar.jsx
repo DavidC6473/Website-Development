@@ -6,7 +6,7 @@ const Links = () => (
     <>
     <p class="hover-underline-animation"><a href="https://www.linkedin.com/in/david-clarke-b2b32822b/" target="_blank">LINKEDIN</a></p>
     <p class="hover-underline-animation"><a href="https://github.com/DavidC6473" target="_blank">GITHUB</a></p>
-    <p class="hover-underline-animation"><a href="https://drive.google.com/file/d/1kSpHakbIRiE8FOFFsqaDTQ0f7hzUUDoR/view?usp=sharing" target="_blank">RESUME</a></p>
+    <p class="hover-underline-animation"><a href="/resume">RESUME</a></p>
     </>
 )
 

@@ -1,0 +1,31 @@
+/* resume.css */
+.resume-container {
+    margin: 5% 5%;
+    height: 90vh; /* Adjust the height as needed */
+    background-color: #161616;
+  }
+  
+  .resume-container embed {
+    width: 90vw;
+    height: 90vh;
+    background-color: #161616;
+  }
+  
+
+
+
+  .download:hover {
+    color: #f06a00;
+  }
+  
+  @media screen and (max-width: 1050px) {
+
+    .resume-container {
+        margin: 20% 5%;
+        height: 90vh; /* Adjust the height as needed */
+        background-color: #161616;
+      }
+    .resume-container a {
+        margin-top: 40px;
+      }
+  }
