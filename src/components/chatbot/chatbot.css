@@ -67,9 +67,14 @@
     font-family: var(--font-family) !important;
     font-size: medium !important;
     box-shadow: none !important;
-    background-color:#161616 !important;
+    background-color: #161616 !important;
     -webkit-text-fill-color: #b2a89f;
+    text-align: left !important;
+    padding-left: 8px !important;
+    white-space: pre-wrap;
   }
+  
+  
   
   button {
     flex: 1 !important;

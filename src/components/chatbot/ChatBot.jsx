@@ -141,7 +141,10 @@ const ChatBot = () => {
   };
 
   return (
-    <div className={`chatbot-container ${collapsed ? 'collapsed' : ''}`}>
+    <div
+      className={`chatbot-container ${collapsed ? 'collapsed' : ''}`}
+      style={{ width: collapsed ? 'fit-content' : '400px' }}
+    >
       <div className="chatbot-header" onClick={toggleCollapsed}>
         <button className="collapse-button">{collapsed ? '+' : '-'}</button>
       </div>
@@ -167,3 +170,10 @@ const ChatBot = () => {
 };
 
 export default ChatBot;
+
+
+
+
+
+
+
