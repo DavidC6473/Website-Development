@@ -37,7 +37,6 @@
     height: auto;
     display: block;
     margin: 0 auto;
-    box-shadow: #f06a00 0px 4px 12px;
     border-radius: 5px;
     margin-top: 3vw;
     margin-bottom: 3vw;
@@ -87,7 +86,6 @@
       height: auto;
       display: block;
       margin: 0 auto;
-      box-shadow: #f06a00 0px 4px 12px;
       border-radius: 4px;
       margin-top: 3vw;
       margin-bottom: 3vw;
@@ -133,7 +131,6 @@
       height: auto;
       display: block;
       margin: 0 auto;
-      box-shadow: #f06a00 0px 4px 8px;
       border-radius: 4px;
       margin-top: 3vw;
       margin-bottom: 3vw;
