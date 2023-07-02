@@ -54,6 +54,13 @@ const Project = () => {
             </a>
           </p>
         </div>
+        <div className='project3'>
+          <p className='dc__projects-animation'>
+            <a className='a_p4' href='/other'>
+              Other Work
+            </a>
+          </p>
+        </div>
         <div className='dc__projects-title'>
           <p className='dc-projects-title-animation'>SKILLS</p>
         </div>

@@ -8,3 +8,4 @@ export { default as VRJam } from './projects/vrjam/VRJam';
 export { default as NBAApp } from './projects/nbaapp/NBAApp';
 export { default as Turtle } from './projects/turtle/Turtle';
 export { default as Java } from './projects/java/Java';
+export { default as Other } from './projects/other/Other';
