@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   cursor: default;
-  margin-right: 5rem;
-  margin-left: 5rem;
+  margin-right: 20vw;
+  margin-left: 20vw;
   margin-top: 5rem;
   z-index: 1;
 }
@@ -169,8 +169,8 @@ textarea[name=message]::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     cursor: default;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 20vw;
+    margin-left: 20vw;
     margin-top: 5rem;
     z-index: 1;
   }
@@ -308,8 +308,8 @@ textarea[name=message]::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     cursor: default;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 15vw;
+    margin-left: 15vw;
     margin-top: 5rem;
     z-index: 1;
   }
@@ -447,8 +447,8 @@ textarea[name=message]::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     cursor: default;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 10vw;
+    margin-left: 10vw;
     margin-top: 5rem;
     z-index: 1;
   }
@@ -586,8 +586,8 @@ textarea[name=message]::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     cursor: default;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 10vw;
+    margin-left: 10vw;
     margin-top: 3.2rem;
     z-index: 1;
   }

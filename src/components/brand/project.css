@@ -25,7 +25,7 @@
 }
 
 .dc__skill i {
-  font-size: 4rem;
+  font-size: 6rem;
   color: #847365;
   transition: color 0.8s ease-out;
 }
@@ -221,6 +221,49 @@
 }
 
 @media screen and (max-width: 1800px) {
+  .dc__skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4vw;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  
+  .dc__skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .dc__skill i {
+    font-size: 6rem;
+    color: #847365;
+    transition: color 0.8s ease-out;
+  }
+  
+  .dc__skill i:hover {
+    color: #f06a00;
+    transition-duration: 0.1s;
+  }
+  
+  .dc__skill-name {
+    margin-top: 0.5rem;
+    color: #847365;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: color 0.8s ease-out;
+  }
+  
+  .dc__skill-name:hover {
+    color: #b2a89f;
+    transition-duration: 0.1s;
+  }
+
   .modal {
     width: 70vw;
     height: 80vh;
@@ -251,6 +294,49 @@
       min-height: 100vh;
       background: #161616;
       z-index: 1;
+    }
+
+    .dc__skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 8vw;
+      margin-top: 10vh;
+      margin-bottom: 20vh;
+      margin-left: 12vw;
+      margin-right: 12vw;
+    }
+    
+    .dc__skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    .dc__skill i {
+      font-size: 4rem;
+      color: #847365;
+      transition: color 0.8s ease-out;
+    }
+    
+    .dc__skill i:hover {
+      color: #f06a00;
+      transition-duration: 0.1s;
+    }
+    
+    .dc__skill-name {
+      margin-top: 0.5rem;
+      color: #847365;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: var(--font-family);
+      transition: color 0.8s ease-out;
+    }
+    
+    .dc__skill-name:hover {
+      color: #b2a89f;
+      transition-duration: 0.1s;
     }
 
     .modal {
@@ -575,6 +661,49 @@
       background: #161616;
       z-index: 1;
     }
+
+    .dc__skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10vw;
+      margin-top: 2vh;
+      margin-bottom: 10vh;
+      margin-left: 6vw;
+      margin-right: 6vw;
+    }
+    
+    .dc__skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    .dc__skill i {
+      font-size: 10rem;
+      color: #847365;
+      transition: color 0.8s ease-out;
+    }
+    
+    .dc__skill i:hover {
+      color: #f06a00;
+      transition-duration: 0.1s;
+    }
+    
+    .dc__skill-name {
+      margin-top: 0.5rem;
+      color: #847365;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: var(--font-family);
+      transition: color 0.8s ease-out;
+    }
+    
+    .dc__skill-name:hover {
+      color: #b2a89f;
+      transition-duration: 0.1s;
+    }
     
     .dc__skill i {
       font-size: 3rem;
@@ -590,9 +719,9 @@
       flex-direction: column;
       align-items: center;
       cursor: default;
-      margin-right: 3rem;
-      margin-left: 3rem;
-      margin-top: 5rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      margin-top: 3rem;
       z-index: 1;
     }
     
@@ -614,10 +743,10 @@
       display: flex;
       align-items: center;
       flex: 2;
-      margin-bottom: 6rem;
+      margin-bottom: 1rem;
       color: #161616;
       font-family: var(--font-family);
-      margin-top: 4rem;
+      margin-top: 1rem;
       text-align: left;
       font-weight: 750;
       font-size: 8vw;
@@ -723,9 +852,9 @@
       flex-direction: column;
       align-items: center;
       cursor: default;
-      margin-right: 2.5rem;
-      margin-left: 2.5rem;
-      margin-top: 5rem;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+      margin-top: 2rem;
       z-index: 1;
     }
     
@@ -749,10 +878,10 @@
       display: flex;
       align-items: center;
       flex: 2;
-      margin-bottom: 6rem;
+      margin-bottom: 2rem;
       color: #161616;
       font-family: var(--font-family);
-      margin-top: 4rem;
+      margin-top: 2rem;
       text-align: left;
       font-weight: 750;
       font-size: 7vw;
@@ -783,7 +912,7 @@
     .dc__projects-title {
       display: flex;
       flex: 1;
-      margin-bottom: 6rem;
+      margin-bottom: 3rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: 4rem;
@@ -870,14 +999,14 @@
       align-items: center;
       text-align: center;
       flex: 2;
-      margin-bottom: 6rem;
+      margin-bottom: 2rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: 1rem;
       text-align: center;
       text-align-last: center;
       font-weight: 750;
-      font-size: 6vw;
+      font-size: 9vw;
       line-height: 10vmax;
       text-transform: capitalize;
       -webkit-text-stroke-width: 1px;
@@ -904,7 +1033,7 @@
     .dc__projects-title {
       display: flex;
       flex: 1;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: .2rem;
