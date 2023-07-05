@@ -75,6 +75,26 @@ input[type=text]:focus {
   outline: none;
 }
 
+input[type=email] {
+  width: 60vw;
+  height: 5vh;
+  background-color: #161616;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-family);
+  color: #f06a00;
+  font-size: 1.6vh;
+  border: none;
+  margin-bottom: 3vh;
+  box-shadow: #f06a00 0px 4px 12px;
+  border-radius: .2rem;
+}
+
+input[type=email]:focus {
+  border: none;
+  outline: none;
+}
+
 textarea[name=message] {
   width: 60vw;
   height: 23vh;
@@ -231,6 +251,25 @@ textarea[name=message]::-webkit-scrollbar-thumb {
     border: none;
     outline: none;
   }
+
+  input[type=email] {
+    width: 60vw;
+    height: 5vh;
+    background-color: #161616;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    color: #f06a00;
+    font-size: 1.6vh;
+    border: none;
+    margin-bottom: 3vh;
+    box-shadow: #f06a00 0px 4px 12px;
+  }
+  
+  input[type=email]:focus {
+    border: none;
+    outline: none;
+  }
   
   textarea[name=message] {
     width: 60vw;
@@ -367,6 +406,25 @@ textarea[name=message]::-webkit-scrollbar-thumb {
   }
   
   input[type=text]:focus {
+    border: none;
+    outline: none;
+  }
+
+  input[type=email] {
+    width: 70vw;
+    height: 5vh;
+    background-color: #161616;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    color: #f06a00;
+    font-size: 1.6vh;
+    border: none;
+    margin-bottom: 3vh;
+    box-shadow: #f06a00 0px 4px 12px;
+  }
+  
+  input[type=email]:focus {
     border: none;
     outline: none;
   }
@@ -509,6 +567,25 @@ textarea[name=message]::-webkit-scrollbar-thumb {
     border: none;
     outline: none;
   }
+
+  input[type=email] {
+    width: 80vw;
+    height: 5vh;
+    background-color: #161616;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    color: #f06a00;
+    font-size: 1.6vh;
+    border: none;
+    margin-bottom: 3vh;
+    box-shadow: #f06a00 0px 4px 12px;
+  }
+  
+  input[type=email]:focus {
+    border: none;
+    outline: none;
+  }
   
   textarea[name=message] {
     width: 80vw;
@@ -645,6 +722,25 @@ textarea[name=message]::-webkit-scrollbar-thumb {
   }
   
   input[type=text]:focus {
+    border: none;
+    outline: none;
+  }
+
+  input[type=email] {
+    width: 80vw;
+    height: 5vh;
+    background-color: #161616;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    color: #f06a00;
+    font-size: 1.6vh;
+    border: none;
+    margin-bottom: 3vh;
+    box-shadow: #f06a00 0px 4px 12px;
+  }
+  
+  input[type=email]:focus {
     border: none;
     outline: none;
   }
