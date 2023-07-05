@@ -8,14 +8,28 @@ const sendEmail = (event, formRef) => {
   const email = event.target.elements.email.value;
   const message = event.target.elements.message.value;
 
-  const formData = new FormData();
-  formData.append('name', name);
-  formData.append('email', email);
-  formData.append('message', message);
+  const data = {
+    sender: {
+      name: 'david-clarke.com',
+      email: 'd_cc@live.ie',
+    },
+    to: [
+      {
+        email: 'dcc6473@gmail.com',
+      },
+    ],
+    subject: 'New Contact Form Submission',
+    htmlContent: `<html><head></head><body><p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p></body></html>`,
+  };
 
-  fetch('/sendEmail.php', {
+  fetch('https://api.brevo.com/v3/smtp/email', {
     method: 'POST',
-    body: formData,
+    headers: {
+      'accept': 'application/json',
+      'api-key': 'Brevo-API-Key',
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify(data),
   })
     .then((response) => {
       if (response.ok) {
@@ -26,7 +40,6 @@ const sendEmail = (event, formRef) => {
         formRef.current.reset();
       } else {
         throw new Error('Failed to send email.');
-
       }
     })
     .catch((error) => {

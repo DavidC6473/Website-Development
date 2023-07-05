@@ -1,4 +1,5 @@
 <?php
+# SendGrid PHP
 header("Access-Control-Allow-Origin: https://david-clarke.com");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
