@@ -54,13 +54,13 @@
     margin-bottom: 3rem;
   }
   
-  .nba-link {
+  .other-link {
     color: #847365;
     text-shadow: #847365 0px 0px .3rem;
     font-size: 2rem;
   }
 
-  .nba-link:hover {
+  .other-link:hover {
     color: #f06a00;
     text-shadow: #f06a00 0px 0px .3rem;
   }
@@ -110,7 +110,7 @@
       margin-top: 2rem;
     }
 
-    .nba-link {
+    .other-link {
       font-size: 1.4rem;
     }
 
@@ -160,7 +160,7 @@
       line-height: 1.2rem;
       margin-top: 2rem;
     }
-    .nba-link {
+    .other-link {
       font-size: 1rem;
     }
 
