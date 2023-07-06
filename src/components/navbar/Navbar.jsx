@@ -19,7 +19,7 @@ const Links = ({ closeMenu }) => (
 const Nav = ({ closeMenu }) => (
   <>
     <p className="hover-underline-animation" onClick={closeMenu}>
-      <a href="/#home">DAVID CLARKE</a>
+      <a href="/#home">HOME</a>
     </p>
     <p className="hover-underline-animation" onClick={closeMenu}>
       <a href="/#projects">PROJECTS</a>
@@ -58,10 +58,12 @@ const Navbar = () => {
       <div className="dc__navbar-nav">
         <div className="dc__navbar-name"></div>
         <div className="dc__navbar-nav_container">
-          <div className="dc__navbar-nav_container-links">
-            <Nav closeMenu={closeMenu} />
-            <Links closeMenu={closeMenu} />
-          </div>
+           <div className='dc__navbar-nav'>
+              <Nav closeMenu={closeMenu} />
+            </div>
+            <div className='dc__navbar-links'>
+              <Links closeMenu={closeMenu} />
+            </div>
         </div>
         <div className="dc__navbar-menu">
           {toggleMenu ? (

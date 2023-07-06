@@ -47,6 +47,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 
 
@@ -70,9 +71,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
-  .dc__navbar-nav_container-links > :last-child {
-    margin-left: auto;
   }
   
 
@@ -129,7 +127,12 @@
 
 .dc__navbar-menu_container p {
     margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 
 
 @keyframes flicker {
