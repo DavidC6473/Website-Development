@@ -60,6 +60,7 @@ const Navbar = () => {
         <div className="dc__navbar-nav_container">
           <div className="dc__navbar-nav_container-links">
             <Nav closeMenu={closeMenu} />
+            <Links closeMenu={closeMenu} />
           </div>
         </div>
         <div className="dc__navbar-menu">

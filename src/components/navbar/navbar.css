@@ -45,7 +45,16 @@
 .dc__navbar-nav_container {
     display: flex;
     flex-direction: row;
-}
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dc__navbar-nav_container-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 .dc__navbar-links_container p,
 .dc__navbar-nav_container p,
@@ -60,6 +69,17 @@
     margin: 0 1rem;
     cursor: default;
 }
+
+.dc__navbar-nav_container-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .dc__navbar-nav_container-links > :last-child {
+    margin-left: auto;
+  }
+  
 
 .hover-underline-animation {
     display: inline-block;
