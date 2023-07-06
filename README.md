@@ -10,6 +10,8 @@ This is the repository for my personal portfolio website, built from scratch usi
 
 - **Router**: The website utilizes React Router to create different pages for project write-ups, allowing visitors to explore detailed information about my projects.
 
+![Router](src/assets/router.PNG)
+
 - **Contact Form**: The contact form enables visitors to get in touch with me. It utilizes the Brevo API and PHP to send an email containing the contact form data to my specified email address.
 
 ![Contact Form](src/assets/contact-form.PNG)
