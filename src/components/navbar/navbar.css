@@ -147,7 +147,7 @@
 
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1170px) {
     .dc__navbar-links_container {
         display: none;
     }
@@ -221,5 +221,6 @@
     }
     .dc__navbar-menu {
         top: 15px;
+        right: 10px;
     }
 }
