@@ -39,7 +39,6 @@
   align-items: center;
   flex-direction: column;
   cursor: default;
-  margin-right: 5rem;
   z-index: 2;
 }
 
@@ -49,11 +48,11 @@
   text-align: center;
   color: var(--color-bg);
   font-family: var(--font-family);
-  font-size: 4vmax;
-  line-height: 10vmax;
-  -webkit-text-stroke-width: 8px;
+  font-size: 4vw;
+  line-height: 10vw;
+  -webkit-text-stroke-width: .5vw;
   -webkit-text-stroke-color: var(--title-text);
-  cursor: default;
+  cursor:crosshair;
   z-index: 0;
   margin-top: -100px; /* Adjust this value to match the height of your navbar */
   text-emphasis: none;
@@ -217,9 +216,9 @@
     text-align: center;
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-size: 4vmax;
-    line-height: 10vmax;
-    -webkit-text-stroke-width: 5px;
+    font-size: 6vw;
+    line-height: 15vw;
+    -webkit-text-stroke-width: .8vw;
     -webkit-text-stroke-color: var(--title-text);
     cursor: default;
     z-index: 0;
@@ -374,9 +373,9 @@
     text-align: center;
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-size: 4.3vmax;
-    line-height: 10vmax;
-    -webkit-text-stroke-width: .25rem;
+    font-size: 6vw;
+    line-height: 15vw;
+    -webkit-text-stroke-width: .8vw;
     -webkit-text-stroke-color: var(--title-text);
     cursor: default;
     align-items: center;
@@ -482,9 +481,9 @@
     text-align: center;
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-size: 4vmax;
-    line-height: 10vmax;
-    -webkit-text-stroke-width: .25rem;
+    font-size: 6vw;
+    line-height: 15vw;
+    -webkit-text-stroke-width: .8vw;
     -webkit-text-stroke-color: var(--title-text);
     cursor: default;
     align-items: center;
@@ -590,9 +589,9 @@
     text-align: center;
     color: var(--color-bg);
     font-family: var(--font-family);
-    font-size: 3.2vmax;
-    line-height: 10vmax;
-    -webkit-text-stroke-width: .2rem;
+    font-size: 6vw;
+    line-height: 15vw;
+    -webkit-text-stroke-width: .8vw;
     -webkit-text-stroke-color: var(--title-text);
     cursor: default;
     align-items: center;
