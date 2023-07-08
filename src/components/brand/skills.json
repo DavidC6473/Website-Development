@@ -1,12 +1,12 @@
 [
     {
-      "name": "JS",
+      "name": "JavaScript",
       "logo": "devicon-javascript-plain",
       "paragraph": "I have been working with JavaScript for the past two years and have gained proficiency in the language. When developing websites, I particularly enjoy using React, a popular JavaScript library for building user interfaces. For instance, I developed my personal website from scratch using JavaScript, HTML, CSS, and React. If you're interested, you can explore the GitHub repository for the website's development:",
       "link": "https://github.com/DavidC6473/Website-Development.git"
     },
     {
-      "name": "TS",
+      "name": "TypeScript",
       "logo": "devicon-typescript-plain",
       "paragraph": "I have experience using TypeScript for developing some of my larger scale and collaborative projects. TypeScript has been instrumental in helping me maintain code robustness and minimizing bugs. One notable project where I utilized TypeScript, along with Three.js, Tone.js, Node.js, Express.js, and Socket.IO, is VR Jam, which was part of my Thesis project during my Masters course. If you're interested, you can find more details about VR Jam in the projects section.\n\n\n Additionally, you can explore the GitHub repository for VR Jam:",
       "link": "https://github.com/DavidC6473/VRJam"
@@ -24,13 +24,13 @@
       "link": "https://github.com/DavidC6473/music-genre-classifier.git"
     },
     {
-      "name": "NodeJS",
+      "name": "Node",
       "logo": "devicon-nodejs-plain",
       "paragraph": "I have extensive experience using Node.js for backend development. Node.js provides a powerful runtime environment for building scalable and efficient server-side applications. One project where I utilized Node.js, along with Express.js and Socket.IO, was my thesis project, VR Jam. The backend was developed using this technology stack to handle real-time communication and support the virtual reality experience. If you'd like to explore this project further, you can check it out on GitHub:",
       "link": "https://github.com/DavidC6473/VRJam.git"
     },
     {
-      "name": "ExpressJS",
+      "name": "Express",
       "logo": "devicon-express-original",
       "paragraph": "I have extensive experience using Express.js for backend development. Express.js, being a minimalist web application framework, complements Node.js perfectly, allowing me to develop robust APIs and handle routing efficiently. One project where I utilized Express.js, along with Node.js and Socket.IO, was my thesis project, VR Jam. The backend was developed using this technology stack to handle real-time communication and support the virtual reality experience. If you'd like to explore this project further, you can check it out on GitHub:",
       "link": "https://github.com/DavidC6473/VRJam.git"
