@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './footer.css';
+import apiKey from './apiKey';
 
 const sendEmail = (event, formRef) => {
   event.preventDefault();
@@ -26,7 +27,7 @@ const sendEmail = (event, formRef) => {
     method: 'POST',
     headers: {
       'accept': 'application/json',
-      'api-key': 'Brevo-API-Key',
+      'api-key': apiKey,
       'content-type': 'application/json',
     },
     body: JSON.stringify(data),
