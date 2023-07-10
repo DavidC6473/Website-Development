@@ -38,7 +38,7 @@
 .dc__skill-name {
   margin-top: 0.5rem;
   color: #847365;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: var(--font-family);
   transition: color 0.8s ease-out;
@@ -220,6 +220,10 @@
   margin-top: 1rem; 
 }
 
+.modal-link:hover {
+  text-shadow: #f06a00 0px 0px .3rem;
+}
+
 @media screen and (max-width: 1800px) {
   .dc__skills-grid {
     display: grid;
@@ -253,7 +257,7 @@
   .dc__skill-name {
     margin-top: 0.5rem;
     color: #847365;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: var(--font-family);
     transition: color 0.8s ease-out;
@@ -328,7 +332,7 @@
     .dc__skill-name {
       margin-top: 0.5rem;
       color: #847365;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
       font-family: var(--font-family);
       transition: color 0.8s ease-out;
@@ -457,7 +461,7 @@
     }
     
     .dc__skill-name {
-      font-size: 1.2rem;
+      font-size: .9rem;
     }
 
     .modal-logo {
@@ -694,7 +698,7 @@
     .dc__skill-name {
       margin-top: 0.5rem;
       color: #847365;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
       font-family: var(--font-family);
       transition: color 0.8s ease-out;
@@ -710,7 +714,7 @@
     }
     
     .dc__skill-name {
-      font-size: 1rem;
+      font-size: .6rem;
     }
     
     .dc__projects-content {
@@ -803,7 +807,7 @@
     }
     
     .dc__skill-name {
-      font-size: .9rem;
+      font-size: .6rem;
     }
   }
   
@@ -821,12 +825,12 @@
     }
     
     .dc__skill-name {
-      font-size: .5rem;
+      font-size: .35rem;
     }
     
     .modal {
       width: 85vw;
-      height: 70vh;
+      height: 85vh;
     }
 
     .modal-logo {
@@ -838,7 +842,7 @@
     }
 
     .modal-text {
-      font-size: x-small;
+      font-size: xx-small;
     }
     
     .modal-link {
@@ -946,7 +950,7 @@
     
     .modal {
       width: 90vw;
-      height: 80vh;
+      height: 90vh;
     }
 
     .modal-logo {
