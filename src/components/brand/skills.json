@@ -46,6 +46,12 @@
       "logo": "devicon-git-plain",
       "paragraph": "Git is an essential tool for version control in software development, and I'm proficient in using it.\n\nI utilize Git for managing my code repositories and tracking changes. I regularly use Git commands such as commit, branch, merge, and push to ensure a smooth and organized workflow.\n\nIf you're interested in exploring my Git repositories, you can visit my GitHub profile:",
       "link": "https://github.com/DavidC6473"
-    }
+    },
+    {
+      "name": "Three.js",
+      "logo": "devicon-threejs-original",
+      "paragraph": "I have extensive experience with Three.js, a popular JavaScript library for creating 3D graphics and interactive experiences in the browser. I specialize in building virtual environments and incorporating virtual reality (VR) features. I have worked on projects that involve real-time connection using Socket.IO, Node.js, and Express.js, enabling seamless communication between clients and servers. Additionally, I am skilled in animation and have experience importing 3D models from Blender. One of my notable projects in this domain is VR Jam, which you can explore on GitHub:",
+      "link": "https://github.com/DavidC6473/VRJam"
+      }
   ]
   
