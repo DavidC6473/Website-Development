@@ -42,6 +42,7 @@ The following dependencies are used in this project:
 
 - React: A JavaScript library for building user interfaces.
 - React Router: A routing library for React that enables navigation between different pages.
+- React Modal: A library for creating modal interfaces.
 - Brevo API: An API used to send emails from the contact form.
 - PHP: A server-side scripting language used to process the contact form data and send emails.
 - Wit.ai API: An API used to create the chatbot and provide responses based on user queries.
