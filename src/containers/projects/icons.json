@@ -1,0 +1,71 @@
+[
+    {
+      "name": "React",
+      "link": "devicon-react-original-wordmark"
+    },
+    {
+      "name": "ThreeJS",
+      "link": "devicon-threejs-original-wordmark"
+    },
+    {
+      "name": "JavaScript",
+      "link": "devicon-javascript-plain"
+    },
+    {
+      "name": "TypeScript",
+      "link": "devicon-typescript-plain"
+    },
+    {
+      "name": "HTML",
+      "link": "devicon-html5-plain-wordmark"
+    },
+    {
+      "name": "CSS",
+      "link": "devicon-css3-plain-wordmark"
+    },
+    {
+      "name": "Python",
+      "link": "devicon-python-plain-wordmark"
+    },
+    {
+      "name": "Jupyter",
+      "link": "devicon-jupyter-plain-wordmark"
+    },
+    {
+      "name": "NodeJS",
+      "link": "devicon-nodejs-plain-wordmark"
+    },
+    {
+      "name": "ExpressJS",
+      "link": "devicon-express-original-wordmark"
+    },
+    {
+      "name": "SocketIO",
+      "link": "devicon-socketio-original-wordmark"
+    },
+    {
+      "name": "Swift",
+      "link": "devicon-swift-plain-wordmark"
+    },
+    {
+      "name": "Django",
+      "link": "devicon-django-plain-wordmark"
+    },
+    {
+      "name": "Java",
+      "link": "devicon-java-plain-wordmark"
+    },
+    {
+      "name": "Anaconda",
+      "link": "devicon-anaconda-original-wordmark"
+    },
+    {
+      "name": "Processing",
+      "link": "devicon-processing-plain-wordmark"
+    },
+    {
+      "name": "Gimp",
+      "link": "devicon-gimp-plain"
+    }
+  ]
+  

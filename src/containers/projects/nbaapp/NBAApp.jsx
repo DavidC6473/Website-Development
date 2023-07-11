@@ -1,14 +1,26 @@
 import React from 'react';
 import './nbaapp.css';
 import NBAAppImage from './NBAApp.png';
+import icons from '../icons.json';
+import '../icons.css';
 
 const NBAApp = () => {
+  const selectedIcons = ['Swift'];
+
   return (
     <div className='nba-container'>
       <div className='nba-content'>
         <h2 className='nba-heading'>NBA App</h2>
         <div className='nba-image-container'>
           <img className='nba-image' src={NBAAppImage} alt='An image' />
+        </div>
+        <div className='vr-icons-container'>
+          {selectedIcons.map((icon) => {
+            const selectedIcon = icons.find((item) => item.name === icon);
+            return selectedIcon ? (
+              <i key={icon} className={`devicon ${selectedIcon.link} vr-icon`} />
+            ) : null;
+          })}
         </div>
         <p className='nba-paragraph'>I recently developed an iPhone application that utilizes CoreData to store NBA teams and other information. One of the features I am most proud of is the ability for users to add and edit cells on the table, including saving new logos, names, abbreviations, stadium images, stadium names, cities, divisions, conferences, player images, draft information, date of birth, and height.</p>
         <p className='nba-paragraph'>In addition, I integrated the ability for users to select photos from their photo library to use as team logos and player images. Users can also delete existing cells and mark items as favorites using the switch feature.</p>
