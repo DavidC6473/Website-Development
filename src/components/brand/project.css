@@ -542,7 +542,7 @@
     .dc__projects-title {
       display: flex;
       flex: 1;
-      margin-bottom: 6rem;
+      margin-bottom: 3rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: 4rem;
@@ -635,7 +635,7 @@
     .dc__projects-title {
       display: flex;
       flex: 1;
-      margin-bottom: 6rem;
+      margin-bottom: 3rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: 4rem;
@@ -747,7 +747,7 @@
       display: flex;
       align-items: center;
       flex: 2;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: 1rem;
@@ -778,7 +778,7 @@
     .dc__projects-title {
       display: flex;
       flex: 1;
-      margin-bottom: 6rem;
+      margin-bottom: 3rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: 4rem;
@@ -829,20 +829,20 @@
     }
     
     .modal {
-      width: 85vw;
-      height: 85vh;
+      width: 90vw;
+      height: 90vh;
     }
 
     .modal-logo {
-      font-size: 5rem;
+      font-size: 4rem;
     }
     
     .modal-skill-name {
-      font-size: large;
+      font-size: medium;
     }
 
     .modal-text {
-      font-size: xx-small;
+      font-size: .35rem;
     }
     
     .modal-link {
@@ -882,10 +882,10 @@
       display: flex;
       align-items: center;
       flex: 2;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       color: #161616;
       font-family: var(--font-family);
-      margin-top: 2rem;
+      margin-top: 1rem;
       text-align: left;
       font-weight: 750;
       font-size: 7vw;
@@ -916,7 +916,7 @@
     .dc__projects-title {
       display: flex;
       flex: 1;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: 4rem;
@@ -950,7 +950,7 @@
     
     .modal {
       width: 90vw;
-      height: 90vh;
+      height: 95vh;
     }
 
     .modal-logo {
@@ -962,7 +962,7 @@
     }
 
     .modal-text {
-      font-size: xx-small;
+      font-size: .35rem;
     }
     
     .modal-link {
@@ -1003,7 +1003,7 @@
       align-items: center;
       text-align: center;
       flex: 2;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: 1rem;
@@ -1037,7 +1037,7 @@
     .dc__projects-title {
       display: flex;
       flex: 1;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       color: #161616;
       font-family: var(--font-family);
       margin-top: .2rem;
