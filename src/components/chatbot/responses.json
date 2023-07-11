@@ -92,6 +92,11 @@
         "I have extensive experience using Node.js and Express.js for backend development. Node.js provides a powerful runtime environment for building scalable and efficient server-side applications. Express.js, being a minimalist web application framework, complements Node.js perfectly, allowing me to develop robust APIs and handle routing efficiently. One project where I utilized Node.js and Express.js, along with Socket.IO, was my thesis project, VR Jam. The backend was developed using this technology stack to handle real-time communication and support the virtual reality experience. If you'd like to explore this project further, you can check it out on GitHub: [GitHub Link](https://github.com/DavidC6473/VRJam.git)"
       ]
     },
+    "pay": {
+      "responses": [
+        "While money is definitely important, right now, my main goal in my career is to find the perfect opportunity that allows me to grow as a developer and gain valuable experience with a fantastic company and an amazing team. Of course, compensation matters, but it's not my sole driving factor at this stage."
+      ]
+    },
     "portfolio": {
       "responses": [
         "This is my portfolio website! I created it from scratch using Javascript and React. Even this ChatBot was created by me from scratch using the wit.ai API. I have a few select projects on display on this site but I have many more on my github which you can find [GitHub Link](https://github.com/DavidC6473)"
