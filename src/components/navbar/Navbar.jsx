@@ -6,7 +6,7 @@ const Links = ({ closeMenu }) => (
   <>
     <p className="hover-underline-animation" onClick={closeMenu}>
       <a href="https://www.linkedin.com/in/david-clarke-b2b32822b/" target="_blank">
-        LINKEDIN <i class="devicon-linkedin-plain"></i>
+        LINKED<i class="devicon-linkedin-plain"></i>
         </a>
     </p>
     <p className="hover-underline-animation" onClick={closeMenu}>
