@@ -1,0 +1,54 @@
+.vr-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vr-icon {
+  color: #847365;
+  font-size: 10rem;
+  margin: 6rem;
+  transition: color 0.8s ease-out;
+}
+
+.vr-icon:hover {
+  color: #f06a00;
+  transition-duration: 0.1s;
+}
+
+@media screen and (max-width: 2500px) {
+  .vr-icon {
+    color: #847365;
+    font-size: 6rem;
+    margin: 3rem;
+    transition: color 0.8s ease-out;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .vr-icon {
+    color: #847365;
+    font-size: 5rem;
+    margin: 2rem;
+    transition: color 0.8s ease-out;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .vr-icon {
+    color: #847365;
+    font-size: 3.5rem;
+    margin: 1rem;
+    transition: color 0.8s ease-out;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .vr-icon {
+    color: #847365;
+    font-size: 2rem;
+    margin: 1rem;
+    transition: color 0.8s ease-out;
+  }
+}

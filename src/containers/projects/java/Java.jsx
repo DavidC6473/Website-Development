@@ -3,8 +3,12 @@ import './java.css';
 import JavaImage1 from './Palette1.PNG';
 import JavaImage2 from './Palette2.PNG';
 import JavaImage3 from './Palette3.PNG';
+import icons from '../icons.json';
+import '../icons.css';
 
 const Java = () => {
+  const selectedIcons = ['JavaScript', 'HTML', 'CSS', 'React'];
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [JavaImage1, JavaImage2, JavaImage3];
 
@@ -24,6 +28,14 @@ const Java = () => {
           <img className='java-image' src={images[currentImageIndex]} alt='An image' />
           <button className='java-arrow-left' onClick={prevSlide}>&lt;</button>
           <button className='java-arrow-right' onClick={nextSlide}>&gt;</button>
+        </div>
+        <div className='vr-icons-container'>
+          {selectedIcons.map((icon) => {
+            const selectedIcon = icons.find((item) => item.name === icon);
+            return selectedIcon ? (
+              <i key={icon} className={`devicon ${selectedIcon.link} vr-icon`} />
+            ) : null;
+          })}
         </div>
         <p className='java-paragraph'>I created this React web application that allows users to dive into a world of random photos sourced from the Unsplash API and explore their associated color palettes. Let me walk you through the features and functionality of this app.</p>
         <p className='java-paragraph'>When you first launch Art Palette, you'll be greeted with a grid of 30 randomly selected photos, all fetched dynamically from the Unsplash API. Each photo offers a glimpse into the diverse and captivating world of visual imagery.</p>

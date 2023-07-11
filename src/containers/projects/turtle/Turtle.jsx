@@ -1,14 +1,26 @@
 import React from 'react';
 import './turtle.css';
 import TurtleImage from './turtle.png';
+import icons from '../icons.json';
+import '../icons.css';
 
 const Turtle = () => {
+  const selectedIcons = ['Python'];
+
   return (
     <div className='turtle-container'>
       <div className='turtle-content'>
         <h2 className='turtle-heading'>Python Fractals</h2>
         <div className='turtle-image-container'>
           <img className='turtle-image' src={TurtleImage} alt='An image' />
+        </div>
+        <div className='vr-icons-container'>
+          {selectedIcons.map((icon) => {
+            const selectedIcon = icons.find((item) => item.name === icon);
+            return selectedIcon ? (
+              <i key={icon} className={`devicon ${selectedIcon.link} vr-icon`} />
+            ) : null;
+          })}
         </div>
         <p className='turtle-paragraph'>In this project, I developed a Turtle Fractal Generator using Python and Tkinter. The purpose of the interface was to allow users to generate fractals easily with IDLE. I was responsible for the entire development of the project, and I am proud to say that I created all the fractals and designed the UI of the interface.</p>
         <p className='turtle-paragraph'>The fractals included in the generator were Fern, Flake, Pentaplex, Square, H Tree, CircleTriangle, Circle3, Carpet3, Spiral, and Bent Tree. Each fractal was unique, and I experimented with different shapes and rules to create visually appealing patterns. I also made small modifications to some of the fractals to improve their appearance, such as adding filled circles in the Fern recursion to make it look like berries.</p>
