@@ -31,7 +31,7 @@
         font-size: 18vw;
         text-align: center;
         -webkit-text-stroke-width: .58vw;
-        text-shadow: var(--color-bg) 0px 0px 13px;
+        text-shadow: none;
       }
     
       .aoa-content h2 {
@@ -44,7 +44,6 @@
         font-size: 22vw;
         text-align: center;
         -webkit-text-stroke-width: .58vw;
-        text-shadow: var(--color-bg) 0px 0px 10px;
       }
     
       .aoa-content h2 {
@@ -57,7 +56,6 @@
         font-size: 22vw;
         text-align: center;
         -webkit-text-stroke-width: .58vw;
-        text-shadow: var(--color-bg) 0px 0px 8px;
       }
     
       .aoa-content h2 {
