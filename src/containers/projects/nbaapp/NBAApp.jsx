@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './nbaapp.css';
 import NBAAppImage from './NBAApp.png';
 import icons from '../icons.json';
@@ -6,10 +6,14 @@ import '../icons.css';
 
 const NBAApp = () => {
   const selectedIcons = ['Swift'];
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const img = new Image();
     img.src = NBAAppImage;
+    img.onload = () => {
+      setImageLoaded(true);
+    };
   }, []);
 
   return (
@@ -17,7 +21,13 @@ const NBAApp = () => {
       <div className='nba-content'>
         <h2 className='nba-heading'>NBA App</h2>
         <div className='nba-image-container'>
-          <img className='nba-image' src={NBAAppImage} alt='An image' />
+          {!imageLoaded && <div className='placeholder' />}
+          <img
+            className={`nba-image ${imageLoaded ? 'loaded' : ''}`}
+            src={NBAAppImage}
+            alt='An image'
+            style={{ display: imageLoaded ? 'block' : 'none' }}
+          />
         </div>
         <div className='vr-icons-container'>
           {selectedIcons.map((icon) => {

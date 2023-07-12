@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './vrjam.css';
 import VRJamImage from './VRJam.png';
 import icons from '../icons.json';
@@ -6,10 +6,14 @@ import '../icons.css';
 
 const VRJam = () => {
   const selectedIcons = ['TypeScript', 'HTML', 'CSS', 'Threejs', 'NodeJS', 'ExpressJS', 'Socketio'];
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const img = new Image();
     img.src = VRJamImage;
+    img.onload = () => {
+      setImageLoaded(true);
+    };
   }, []);
 
   return (
@@ -17,7 +21,13 @@ const VRJam = () => {
       <div className='vr-content'>
         <h2 className='vr-heading'>VRJam</h2>
         <div className='vr-image-container'>
-          <img className='vr-image' src={VRJamImage} alt='An image' />
+          {!imageLoaded && <div className='placeholder' />}
+          <img
+            className={`vr-image ${imageLoaded ? 'loaded' : ''}`}
+            src={VRJamImage}
+            alt='An image'
+            style={{ display: imageLoaded ? 'block' : 'none' }}
+          />
         </div>
         <div className='vr-icons-container'>
           {selectedIcons.map((icon) => {
