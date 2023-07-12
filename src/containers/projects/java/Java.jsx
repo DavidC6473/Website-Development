@@ -11,6 +11,7 @@ const Java = () => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [JavaImage1, JavaImage2, JavaImage3];
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const nextSlide = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -21,18 +22,25 @@ const Java = () => {
   };
 
   useEffect(() => {
-    images.forEach((image) => {
-      const img = new Image();
-      img.src = image;
-    });
-  }, [images]);
+    const img = new Image();
+    img.src = images[currentImageIndex];
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+  }, [currentImageIndex]);
 
   return (
     <div className='java-container'>
       <div className='java-content'>
         <h2 className='java-heading'>Art-Palette</h2>
         <div className='java-image-container'>
-          <img className='java-image' src={images[currentImageIndex]} alt='An image' />
+          {!imageLoaded && <div className='placeholder' />}
+          <img
+            className={`java-image ${imageLoaded ? 'loaded' : ''}`}
+            src={images[currentImageIndex]}
+            alt='An image'
+            style={{ display: imageLoaded ? 'block' : 'none' }}
+          />
           <button className='java-arrow-left' onClick={prevSlide}>&lt;</button>
           <button className='java-arrow-right' onClick={nextSlide}>&gt;</button>
         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './turtle.css';
 import TurtleImage from './turtle.png';
 import icons from '../icons.json';
@@ -6,10 +6,14 @@ import '../icons.css';
 
 const Turtle = () => {
   const selectedIcons = ['Python'];
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const img = new Image();
     img.src = TurtleImage;
+    img.onload = () => {
+      setImageLoaded(true);
+    };
   }, []);
 
   return (
@@ -17,7 +21,13 @@ const Turtle = () => {
       <div className='turtle-content'>
         <h2 className='turtle-heading'>Python Fractals</h2>
         <div className='turtle-image-container'>
-          <img className='turtle-image' src={TurtleImage} alt='An image' />
+          {!imageLoaded && <div className='placeholder' />}
+          <img
+            className={`turtle-image ${imageLoaded ? 'loaded' : ''}`}
+            src={TurtleImage}
+            alt='An image'
+            style={{ display: imageLoaded ? 'block' : 'none' }}
+          />
         </div>
         <div className='vr-icons-container'>
           {selectedIcons.map((icon) => {
