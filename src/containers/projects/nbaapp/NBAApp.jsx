@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './nbaapp.css';
 import NBAAppImage from './NBAApp.png';
 import icons from '../icons.json';
@@ -6,6 +6,11 @@ import '../icons.css';
 
 const NBAApp = () => {
   const selectedIcons = ['Swift'];
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = NBAAppImage;
+  }, []);
 
   return (
     <div className='nba-container'>

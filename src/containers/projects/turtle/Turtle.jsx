@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './turtle.css';
 import TurtleImage from './turtle.png';
 import icons from '../icons.json';
@@ -6,6 +6,11 @@ import '../icons.css';
 
 const Turtle = () => {
   const selectedIcons = ['Python'];
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = TurtleImage;
+  }, []);
 
   return (
     <div className='turtle-container'>

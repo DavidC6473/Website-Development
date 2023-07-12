@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './java.css';
 import JavaImage1 from './Palette1.PNG';
 import JavaImage2 from './Palette2.PNG';
@@ -19,6 +19,13 @@ const Java = () => {
   const prevSlide = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
+
+  useEffect(() => {
+    images.forEach((image) => {
+      const img = new Image();
+      img.src = image;
+    });
+  }, [images]);
 
   return (
     <div className='java-container'>
