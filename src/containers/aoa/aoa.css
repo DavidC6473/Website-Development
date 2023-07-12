@@ -1,0 +1,66 @@
+.aoa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #161616;
+    color: aliceblue;
+}
+
+.aoa-content h1 {
+    flex: 1;
+    color: #161616;
+    font-family: var(--font-family);
+    font-size: 15vw;
+    text-align: center;
+    -webkit-text-stroke-width: .55vw;
+    -webkit-text-stroke-color: #f06a00;
+    text-shadow: var(--color-bg) 0px 0px 18px;
+  }
+
+  .aoa-content h2 {
+    flex: 1;
+    color: var(--color-bg);
+    font-family: var(--font-family);
+    font-size: 1.8vw;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 900px) {
+    .aoa-content h1 {
+        font-size: 18vw;
+        text-align: center;
+        -webkit-text-stroke-width: .58vw;
+        text-shadow: var(--color-bg) 0px 0px 13px;
+      }
+    
+      .aoa-content h2 {
+        font-size: 2vw;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+    .aoa-content h1 {
+        font-size: 22vw;
+        text-align: center;
+        -webkit-text-stroke-width: .58vw;
+        text-shadow: var(--color-bg) 0px 0px 10px;
+      }
+    
+      .aoa-content h2 {
+        font-size: 2.4vw;
+      }
+  }
+
+  @media screen and (max-width: 300px) {
+    .aoa-content h1 {
+        font-size: 22vw;
+        text-align: center;
+        -webkit-text-stroke-width: .58vw;
+        text-shadow: var(--color-bg) 0px 0px 8px;
+      }
+    
+      .aoa-content h2 {
+        font-size: 2.6vw;
+      }
+  }
