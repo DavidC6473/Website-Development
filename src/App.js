@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Footer, Header, Features } from './containers';
-import { VRJam, NBAApp, Turtle, Java, Other, Resume } from './containers';
+import { VRJam, NBAApp, Turtle, Java, Other, Resume, AOA } from './containers';
 import { Project, Navbar, ChatBot } from './components';
 import './App.css';
 
@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/java" element={<Java />} />
           <Route path="/other" element={<Other />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<h1>404 Page Not Found</h1>} />
+          <Route path="*" element={<AOA />} />
         </Routes>
         <Footer />
       </div>

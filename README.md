@@ -26,6 +26,10 @@ This is the repository for my personal portfolio website, built from scratch usi
 
 ![Skills Section](src/assets/skills.PNG)
 
+- **404 Page**: A 404 page has been added for any non-existing pages.
+
+![Router](src/assets/404.PNG)
+
 ## Getting Started
 
 To run this portfolio website locally, follow these steps:

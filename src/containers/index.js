@@ -3,7 +3,7 @@ export { default as Features } from './features/Features';
 export { default as Footer } from './footer/Footer';
 export { default as Header } from './header/Header';
 export { default as Possibility } from './possibility/Possibility';
-export { default as WhatDC } from './whatDC/WhatDC';
+export { default as AOA } from './aoa/AOA';
 export { default as VRJam } from './projects/vrjam/VRJam';
 export { default as NBAApp } from './projects/nbaapp/NBAApp';
 export { default as Turtle } from './projects/turtle/Turtle';
