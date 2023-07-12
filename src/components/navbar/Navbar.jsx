@@ -5,17 +5,17 @@ import './navbar.css';
 const Links = ({ closeMenu }) => (
   <>
     <p className="hover-underline-animation" onClick={closeMenu}>
-      <a href="https://www.linkedin.com/in/david-clarke-b2b32822b/" target="_blank">
-        LINKED<i class="devicon-linkedin-plain"></i>
-        </a>
+      <a href="https://drive.google.com/file/d/1kSpHakbIRiE8FOFFsqaDTQ0f7hzUUDoR/view" target="_blank">RESUME</a>
     </p>
     <p className="hover-underline-animation" onClick={closeMenu}>
       <a href="https://github.com/DavidC6473" target="_blank">
-        GITHUB <i className="devicon-github-original"></i>
+        GITHUB<i className="devicon-github-original"></i>
       </a>
     </p>
     <p className="hover-underline-animation" onClick={closeMenu}>
-      <a href="https://drive.google.com/file/d/1kSpHakbIRiE8FOFFsqaDTQ0f7hzUUDoR/view" target="_blank">RESUME</a>
+      <a href="https://www.linkedin.com/in/david-clarke-b2b32822b/" target="_blank">
+        LINKED<i class="devicon-linkedin-plain"></i>
+        </a>
     </p>
   </>
 );

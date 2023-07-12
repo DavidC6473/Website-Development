@@ -13,6 +13,13 @@
     /*border-bottom: 2px solid #f06a00;*/
 }
 
+.devicon-github-original {
+    color: #f06a00 !important;
+}
+
+.devicon-linkedin-plain {
+    color: #f06a00 !important;
+}
 
 .dc__navbar-links {
     flex: 1;
