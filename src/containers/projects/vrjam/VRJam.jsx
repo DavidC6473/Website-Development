@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './vrjam.css';
 import VRJamImage from './VRJam.png';
 import icons from '../icons.json';
@@ -6,6 +6,11 @@ import '../icons.css';
 
 const VRJam = () => {
   const selectedIcons = ['TypeScript', 'HTML', 'CSS', 'Threejs', 'NodeJS', 'ExpressJS', 'Socketio'];
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = VRJamImage;
+  }, []);
 
   return (
     <div className='vr-container'>
