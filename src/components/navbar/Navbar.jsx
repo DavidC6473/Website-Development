@@ -20,19 +20,36 @@ const Links = ({ closeMenu }) => (
   </>
 );
 
-const Nav = ({ closeMenu }) => (
-  <>
-    <p className="hover-underline-animation" onClick={closeMenu}>
-      <a href="/#home">HOME</a>
-    </p>
-    <p className="hover-underline-animation" onClick={closeMenu}>
-      <a href="/#projects">PROJECTS</a>
-    </p>
-    <p className="hover-underline-animation" onClick={closeMenu}>
-      <a href="/#contact">CONTACT</a>
-    </p>
-  </>
-);
+const Nav = ({ closeMenu }) => {
+  const handleClick = (event) => {
+    event.preventDefault();
+    const target = event.target.getAttribute("href");
+    if (target === "#contact") {
+      const currentPath = window.location.pathname;
+      const newPath = currentPath + target;
+      window.location.href = newPath;
+    } else {
+      window.location.href = target;
+    }
+    closeMenu();
+  };
+
+  return (
+    <>
+      <p className="hover-underline-animation" onClick={handleClick}>
+        <a href="/">HOME</a>
+      </p>
+      <p className="hover-underline-animation" onClick={handleClick}>
+        <a href="/#projects">PROJECTS</a>
+      </p>
+      <p className="hover-underline-animation" onClick={handleClick}>
+        <a href="#contact">CONTACT</a>
+      </p>
+    </>
+  );
+};
+
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
