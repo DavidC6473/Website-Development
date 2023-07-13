@@ -2,6 +2,8 @@
 
 This is the repository for my personal portfolio website, built from scratch using JavaScript, HTML, CSS, React, and PHP. The website is designed to showcase my projects, provide information about me and my experience, and serve as a means of contact.
 
+This portfolio features in Emma Bostian's [developer-portfolios](https://github.com/emmabostian/developer-portfolios)
+
 ## Features
 
 - **Mobile Responsive**: The website is designed to work seamlessly across various screen sizes, ensuring a great user experience on both desktop and mobile devices.
