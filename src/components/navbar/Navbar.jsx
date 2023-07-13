@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
+import resume from './David-Clarke-CV.pdf';
 
 const Links = ({ closeMenu }) => (
   <>
     <p className="hover-underline-animation" onClick={closeMenu}>
-      <a href="https://drive.google.com/file/d/1kSpHakbIRiE8FOFFsqaDTQ0f7hzUUDoR/view" target="_blank">RESUME</a>
+      <a href={resume} target="_blank">RESUME</a>
     </p>
     <p className="hover-underline-animation" onClick={closeMenu}>
       <a href="https://github.com/DavidC6473" target="_blank">
