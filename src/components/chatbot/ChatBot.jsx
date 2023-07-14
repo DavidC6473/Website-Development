@@ -5,7 +5,7 @@ import responses from './responses.json';
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
   const [userMessage, setUserMessage] = useState('');
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const messageContainerRef = useRef(null);
 
   const renderers = {
