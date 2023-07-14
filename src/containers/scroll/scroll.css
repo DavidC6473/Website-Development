@@ -14,7 +14,7 @@
     text-shadow: #161616 0px 0px .15rem;
     -webkit-text-stroke-width: .1rem;
     -webkit-text-stroke-color: #161616;
-    cursor: default;
+    cursor: pointer;
     font-weight: bolder;
     z-index: 9999;
     transition: transform 0.6s ease; /* Add a transition effect */
@@ -30,7 +30,7 @@
     transition: transform 0.3s ease; /* Add a transition effect */
   }
   
-  .scroll-button.scroll-to-top span:last-child {
+  .scroll-button.scroll-to-top span:first-child {
     transform: rotate(180deg) translateY(-5px); /* Apply rotation and translateY for scroll-to-top state */
     animation: bounce-up 1s infinite alternate; /* Add bounce animation */
   }
@@ -75,18 +75,18 @@
     }
 
     .scroll-button.scroll-to-top {
-        left: 95%; /* Move the scroll-to-top arrow to 85% left position */
-        color: #f06a00 !important;
-        -webkit-text-stroke-width: .1rem !important;
-        -webkit-text-stroke-color: #161616 !important;
-        font-size: medium !important;
+        left: 92%; /* Move the scroll-to-top arrow to 85% left position */
+        color: #161616 !important;
+        -webkit-text-stroke-width: .05rem !important;
+        -webkit-text-stroke-color: #f06a00 !important;
+        font-size: small !important;
       }
   
-    .scroll-button.scroll-to-top span:first-child {
+    .scroll-button.scroll-to-top span:last-child {
       display: none;
     }
 
-    .scroll-button.scroll-to-top span:last-child {
+    .scroll-button.scroll-to-top span:first-child {
         animation: none;
       }
   }
