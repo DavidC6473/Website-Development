@@ -32,6 +32,8 @@ My portfolio has been featured in Emma Bostian's [developer-portfolios](https://
 
 ![Router](src/assets/404.PNG)
 
+- **Scroll Function**: Added a scroll prompt so the user knows there is more to see on the landing page. This can also be clicked to send the user to the project section on desktop and the about section on mobile. Once the user has scrolled from the top, it will change to a scroll to top button that the user can click to navigate to the top of the page.
+
 ## Getting Started
 
 To run this portfolio website locally, follow these steps:
