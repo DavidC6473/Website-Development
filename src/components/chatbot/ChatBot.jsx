@@ -17,13 +17,22 @@ const ChatBot = () => {
   };
 
   useEffect(() => {
-    const initialBotMessage =
-      "Hi, I'm a ChatBot created by David. Ask me about David's skills and experience, and I will do my best to answer!";
-    addMessage(initialBotMessage, 'bot');
+    const storedMessages = localStorage.getItem('chatMessages');
+    if (storedMessages) {
+      setMessages(JSON.parse(storedMessages));
+    } else {
+      const initialBotMessage =
+        "Hi, I'm a ChatBot created by David. Ask me about David's skills and experience, and I will do my best to answer!";
+      addMessage(initialBotMessage, 'bot');
+    }
   }, []);
 
   useEffect(() => {
     scrollToBottom();
+  }, [messages]);
+
+  useEffect(() => {
+    localStorage.setItem('chatMessages', JSON.stringify(messages));
   }, [messages]);
 
   const scrollToBottom = () => {
