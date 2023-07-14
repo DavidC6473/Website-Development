@@ -146,7 +146,10 @@ const ChatBot = () => {
       style={{ width: collapsed ? 'fit-content' : '400px' }}
     >
       <div className="chatbot-header" onClick={toggleCollapsed}>
-        <button className="collapse-button">{collapsed ? '+' : '-'}</button>
+        <div className="collapse-button-container">
+          <button className="collapse-button">{collapsed ? '+' : '-'}</button>
+          {collapsed && <div className="chatbot-text">ChatBot</div>}
+        </div>
       </div>
       {!collapsed && (
         <div className="chatbot-messages" ref={messageContainerRef}>

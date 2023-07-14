@@ -107,7 +107,15 @@
     align-self: center !important;
   }
   
+  .collapse-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .collapse-button {
+    flex: 2 !important;
     color: #161616 !important;
     background-color: #f06a00 !important;
     border: none !important;
@@ -125,6 +133,14 @@
     font-size: larger !important;
     font-weight: bolder !important;
   }
+  
+  .chatbot-text {
+    font-family:var(--font-family);
+    color: #b2a89f;
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: 5px;
+  }
 
   .collapse-button:hover {
     transform: scale(1.05);
@@ -140,6 +156,9 @@
     color: #f06a00;
     text-decoration: underline;
   }  
+
+
+  
   
   @media only screen and (max-width: 1050px) {
     .chatbot-container {
