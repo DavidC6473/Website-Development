@@ -1,16 +1,93 @@
-#loader-wrapper .loader-section {
+.scroll-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    top: 0;
-    width: 51%;
-    height: 100%;
-    background: #222222;
-    z-index: 1000;
-}
- 
-#loader-wrapper .loader-section.section-left {
-    left: 0;
-}
- 
-#loader-wrapper .loader-section.section-right {
-    right: 0;
-}
+    bottom: 20px;
+    left: 6%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: larger;
+    color: #f06a00;
+    text-shadow: #161616 0px 0px .15rem;
+    -webkit-text-stroke-width: .1rem;
+    -webkit-text-stroke-color: #161616;
+    cursor: pointer;
+    font-weight: bolder;
+    z-index: 9999;
+    transition: transform 0.6s ease; /* Add a transition effect */
+  }
+  
+  .scroll-button.scroll-to-top {
+    cursor: pointer;
+  }
+  
+  .scroll-button span {
+    margin-top: 5px;
+    transform: translateY(0); /* Set initial translateY value */
+    transition: transform 0.3s ease; /* Add a transition effect */
+  }
+  
+  .scroll-button.scroll-to-top span:first-child {
+    transform: rotate(180deg) translateY(-5px); /* Apply rotation and translateY for scroll-to-top state */
+    animation: bounce-up 1s infinite alternate; /* Add bounce animation */
+  }
+  
+  .scroll-button:not(.scroll-to-top) span:last-child {
+    transform: rotate(0) translateY(5px); /* Apply rotation and translateY for non-scroll-to-top state */
+    animation: bounce-down 1s infinite alternate; /* Add bounce animation */
+  }
+  
+  @keyframes bounce-up {
+    0% {
+      transform: rotate(180deg) translateY(-5px);
+    }
+    50% {
+      transform: rotate(180deg) translateY(5px);
+    }
+    100% {
+      transform: rotate(180deg) translateY(-5px);
+    }
+  }
+  
+  @keyframes bounce-down {
+    0% {
+      transform: rotate(0) translateY(5px);
+    }
+    50% {
+      transform: rotate(0) translateY(-5px);
+    }
+    100% {
+      transform: rotate(0) translateY(5px);
+    }
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .scroll-button {
+      bottom: 20px;
+      left: 50%;
+      font-size: small;
+      text-shadow: none;
+      color: #161616;
+      -webkit-text-stroke-width: 0px;
+    }
+
+    .scroll-button.scroll-to-top {
+        left: 92%; /* Move the scroll-to-top arrow to 85% left position */
+        color: #161616 !important;
+        -webkit-text-stroke-width: .05rem !important;
+        -webkit-text-stroke-color: #f06a00 !important;
+        font-size: small !important;
+      }
+  
+    .scroll-button.scroll-to-top span:last-child {
+      display: none;
+    }
+
+    .scroll-button.scroll-to-top span:first-child {
+        animation: none;
+      }
+  }
+  
