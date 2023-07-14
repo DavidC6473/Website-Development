@@ -87,7 +87,11 @@
     }
 
     .scroll-button.scroll-to-top span:first-child {
-        animation: none;
-      }
+        transform: rotate(180deg) translateY(-5px);
+        animation: none; 
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 2.5vw;
+    }
   }
   
