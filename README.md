@@ -22,7 +22,7 @@ My portfolio has been featured in Emma Bostian's [developer-portfolios](https://
 
 ![Chatbot](src/assets/chatbot.PNG)
 
-- **Custom Styling and Animations**: The website's style and layout have been personally designed by me using CSS. It includes animations to create an engaging user interface.
+- **Custom Styling and Animations**: The website's style and layout have been personally designed by me using CSS. It includes animations to create an engaging user interface. The chatbot uses UseEffect to store messages in the browser's local storage to save the dialogue.
 
 - **Skills Section**: The website features a skills section that highlights the languages I am proficient in. Clicking on each skill triggers a React modal, providing a detailed write-up about each skill.
 
