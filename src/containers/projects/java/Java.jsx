@@ -44,6 +44,7 @@ const Java = () => {
           <button className='java-arrow-left' onClick={prevSlide}>&lt;</button>
           <button className='java-arrow-right' onClick={nextSlide}>&gt;</button>
         </div>
+        <p className='java-paragraph'><a className='demo-link' href='https://artpalette.onrender.com/' target='_blank'>Demo</a></p>
         <div className='vr-icons-container'>
           {selectedIcons.map((icon) => {
             const selectedIcon = icons.find((item) => item.name === icon);

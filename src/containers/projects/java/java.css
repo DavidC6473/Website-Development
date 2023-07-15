@@ -63,6 +63,18 @@
   text-shadow: #f06a00 0px 0px .3rem;
 }
 
+.demo-link {
+  color: #f06a00;
+  text-shadow: none;
+  transition: 0.5s ease-out;
+  font-size: xx-large !important;
+}
+
+.demo-link:hover {
+  text-shadow: #f06a00 0px 0px .3rem;
+  transition-duration: 0.1s;
+}
+
 .java-arrow-left,
 .java-arrow-right {
   position: absolute;
@@ -147,6 +159,10 @@
     .java-arrow-left,
     .java-arrow-right {
       font-size: 1.5rem !important;
+    }
+
+    .demo-link {
+      display: none;
     }
   }
   
