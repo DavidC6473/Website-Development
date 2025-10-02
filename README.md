@@ -4,6 +4,10 @@ This is the repository for my personal portfolio website, built from scratch usi
 
 My portfolio has been featured in Emma Bostian's [developer-portfolios](https://github.com/emmabostian/developer-portfolios).
 
+You can view a demo of my portfolio [here.](https://david-clarke.vercel.app/)
+
+After some deliberation, I felt that while proud of this portfolio, I wanted to create a new portfolio that displayed my improvement as a developer. I also utilised Figma for design and Tailwind in this project to improve on the lacking UI/UX considerations in this project. You can visit my New portfolio [here.](https://david-clarke.dev)
+
 ## Features
 
 - **Mobile Responsive**: The website is designed to work seamlessly across various screen sizes, ensuring a great user experience on both desktop and mobile devices.
